@@ -46,6 +46,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("axios");
 var https = require("https");
@@ -74,8 +83,31 @@ var keyMap = {
     '準備学習': 'preparation',
     '成績評価方法・基準': 'evaluation',
     '教科書': 'textbook',
+    //参考書の追加
+    '参考書': 'referenceMaterials',
     '授業計画': 'schedulePlan',
 };
+//ダミーデータ群
+var dummyDatas = ["https://kyo-web.teu.ac.jp/syllabus/2025/BT_B10201_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/CS_11050C01_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/MS_M000519_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/ES_K100601_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/ESE7_K000605_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/ESE7_K703901_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/X1_L9110101_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/DS_R204D_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/HS_T3300_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2024/X3_GE000401_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2024/GF_GF1004_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/GH_GH1008_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/BT_B21001_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/HSH2_U2204_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/HSH2_W2206_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/HSH6_U60122_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/MS_11051M08_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/MS_11051M21_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/HSH5_W5406_ja_JP.html",
+    "https://kyo-web.teu.ac.jp/syllabus/2025/CS_C40260_ja_JP.html",];
 // --- テーブルからデータを抽出 ---
 var extractTableData = function ($, table) {
     var data = {};
@@ -84,53 +116,78 @@ var extractTableData = function ($, table) {
         var th = $(row).find('th').text().trim().replace(/\s+/g, ' ');
         var td = ((_a = $(row).find('td').html()) === null || _a === void 0 ? void 0 : _a.trim()) || '';
         td = td.replace(/<br\s*\/?>/gi, '\n').replace(/\s+/g, ' ').trim();
+        //keyの設定（日本語から英語に）
         var key = keyMap[th];
         if (key && td) {
-            data[key] = td;
+            //schedule,department,gradeの処理（string[]の処理）
+            if ((key == 'schedule') || (key == 'department') || (key == 'grade')) {
+                data[key] = td.split(",").map(function (str) { return str.replace(/\s+/g, ""); });
+            }
+            else if (key == 'credits') {
+                //credits（numberの処理）
+                data[key] = Number(td);
+            }
+            else {
+                //それ以外の処理（stringの処理）
+                data[key] = td;
+            }
         }
     });
     return data;
 };
 // --- メイン処理 ---
-var main = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var url, agent, html, $, basicTable, detailTable, basicData, detailData, lectureInfo, error_1;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                _a.trys.push([0, 2, , 3]);
-                url = "https://kyo-web.teu.ac.jp/syllabus/2024/MS_11040M1_ja_JP.html";
-                agent = new https.Agent({
-                    minVersion: "TLSv1.2",
-                    rejectUnauthorized: false,
-                    secureOptions: crypto_1.constants.SSL_OP_LEGACY_SERVER_CONNECT,
-                });
-                return [4 /*yield*/, axios_1.default.get(url, {
-                        httpsAgent: agent,
-                        headers: {
-                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
-                        }
-                    })];
-            case 1:
-                html = (_a.sent()).data;
-                $ = cheerio.load(html);
-                basicTable = $('#tabs-1 table.syllabus-normal').get(0);
-                detailTable = $('#tabs-2 table.syllabus-normal').get(0);
-                if (!basicTable || !detailTable) {
-                    throw new Error('必要なテーブルが見つかりませんでした');
-                }
-                basicData = extractTableData($, basicTable);
-                detailData = extractTableData($, detailTable);
-                lectureInfo = __assign(__assign({}, basicData), detailData);
-                // JSONとして保存
-                fs.writeFileSync('lectureData/lecture.json', JSON.stringify(lectureInfo, null, 2), 'utf8');
-                console.log('✅ lecture.json に保存しました');
-                return [3 /*break*/, 3];
-            case 2:
-                error_1 = _a.sent();
-                console.error('❌ エラーが発生しました:', error_1);
-                return [3 /*break*/, 3];
-            case 3: return [2 /*return*/];
-        }
+var main = function () {
+    var args_1 = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args_1[_i] = arguments[_i];
+    }
+    return __awaiter(void 0, __spreadArray([], args_1, true), void 0, function (url) {
+        var agent, html, $, basicTable, detailTable, basicData, detailData, lectureInfo, error_1;
+        if (url === void 0) { url = "https://kyo-web.teu.ac.jp/syllabus/2024/BT_11040B1_ja_JP.html"; }
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    agent = new https.Agent({
+                        minVersion: "TLSv1.2",
+                        rejectUnauthorized: false,
+                        secureOptions: crypto_1.constants.SSL_OP_LEGACY_SERVER_CONNECT,
+                    });
+                    return [4 /*yield*/, axios_1.default.get(url, {
+                            httpsAgent: agent,
+                            headers: {
+                                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+                            }
+                        })];
+                case 1:
+                    html = (_a.sent()).data;
+                    $ = cheerio.load(html);
+                    basicTable = $('#tabs-1 table.syllabus-normal').get(0);
+                    detailTable = $('#tabs-2 table.syllabus-normal').get(0);
+                    if (!basicTable || !detailTable) {
+                        throw new Error('必要なテーブルが見つかりませんでした');
+                    }
+                    basicData = extractTableData($, basicTable);
+                    detailData = extractTableData($, detailTable);
+                    lectureInfo = __assign(__assign({}, basicData), detailData);
+                    // JSONとして保存
+                    //fs.writeFileSync('lectureData/lecture.json', JSON.stringify(lectureInfo, null, 2), 'utf8');
+                    //console.log('✅ lecture.json に保存しました');
+                    //Dummyの取得
+                    fs.writeFileSync("DummyDatas/".concat(basicData.timetableCode, ".json"), JSON.stringify(lectureInfo, null, 2), 'utf8');
+                    console.log("\u2705 DummyDatas/".concat(basicData.timetableCode, ".json \u306B\u4FDD\u5B58\u3057\u307E\u3057\u305F"));
+                    return [3 /*break*/, 3];
+                case 2:
+                    error_1 = _a.sent();
+                    console.error('❌ エラーが発生しました:', error_1);
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
+            }
+        });
     });
-}); };
+};
 main();
+//ダミーデータの反復処理（mainの反復実行）
+dummyDatas.map(function (dummyUrl) {
+    main(dummyUrl);
+});
