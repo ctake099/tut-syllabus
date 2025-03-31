@@ -6,13 +6,15 @@
   "timetableCode": "C40260",
   "semester": "2025年度 前期",
   "schedule": [
-    "他"
+    {
+      "day": "他"
+    }
   ],
   "department": [
     "コンピュータサイエンス学部コンピュータサイエンス学科"
   ],
   "grade": [
-    "4年"
+    4
   ],
   "credits": 4,
   "lastUpdated": "2025/02/20",

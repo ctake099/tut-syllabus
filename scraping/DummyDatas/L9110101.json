@@ -6,13 +6,15 @@
   "timetableCode": "L9110101",
   "semester": "2025年度 前期",
   "schedule": [
-    "他"
+    {
+      "day": "他"
+    }
   ],
   "grade": [
-    "1年",
-    "2年",
-    "3年",
-    "4年"
+    1,
+    2,
+    3,
+    4
   ],
   "credits": 1,
   "lastUpdated": "2025/01/23",

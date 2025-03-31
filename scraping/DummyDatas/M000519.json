@@ -6,14 +6,20 @@
   "timetableCode": "M000519",
   "semester": "2025年度 前期",
   "schedule": [
-    "木4",
-    "木5"
+    {
+      "day": "木",
+      "period": 4
+    },
+    {
+      "day": "木",
+      "period": 5
+    }
   ],
   "department": [
     "メディア学部メディア学科"
   ],
   "grade": [
-    "3年"
+    3
   ],
   "credits": 4,
   "lastUpdated": "2025/01/29",

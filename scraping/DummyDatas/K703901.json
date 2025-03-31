@@ -6,17 +6,26 @@
   "timetableCode": "K703901",
   "semester": "2025年度 前期",
   "schedule": [
-    "火3",
-    "火4",
-    "火5"
+    {
+      "day": "火",
+      "period": 3
+    },
+    {
+      "day": "火",
+      "period": 4
+    },
+    {
+      "day": "火",
+      "period": 5
+    }
   ],
   "department": [
     "工学部応用化学科"
   ],
   "grade": [
-    "2年",
-    "3年",
-    "4年"
+    2,
+    3,
+    4
   ],
   "credits": 3,
   "classroom": "片柳研究所Ｅ３０３",

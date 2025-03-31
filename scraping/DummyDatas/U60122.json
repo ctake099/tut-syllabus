@@ -6,16 +6,19 @@
   "timetableCode": "U60122",
   "semester": "2025年度 前期",
   "schedule": [
-    "金2"
+    {
+      "day": "金",
+      "period": 2
+    }
   ],
   "department": [
     "医療保健学部"
   ],
   "grade": [
-    "1年",
-    "2年",
-    "3年",
-    "4年"
+    1,
+    2,
+    3,
+    4
   ],
   "credits": 2,
   "classroom": "３０２０２教室",

@@ -107,7 +107,8 @@ var dummyDatas = ["https://kyo-web.teu.ac.jp/syllabus/2025/BT_B10201_ja_JP.html"
     "https://kyo-web.teu.ac.jp/syllabus/2025/MS_11051M08_ja_JP.html",
     "https://kyo-web.teu.ac.jp/syllabus/2025/MS_11051M21_ja_JP.html",
     "https://kyo-web.teu.ac.jp/syllabus/2025/HSH5_W5406_ja_JP.html",
-    "https://kyo-web.teu.ac.jp/syllabus/2025/CS_C40260_ja_JP.html",];
+    "https://kyo-web.teu.ac.jp/syllabus/2025/CS_C40260_ja_JP.html",
+];
 // --- テーブルからデータを抽出 ---
 var extractTableData = function ($, table) {
     var data = {};
@@ -119,9 +120,30 @@ var extractTableData = function ($, table) {
         //keyの設定（日本語から英語に）
         var key = keyMap[th];
         if (key && td) {
-            //schedule,department,gradeの処理（string[]の処理）
-            if ((key == 'schedule') || (key == 'department') || (key == 'grade')) {
+            //scheduleの処理(Schedule{day, period}の処理)
+            if (key == 'schedule') {
+                //lstをmapで回して数字以外にマッチするものをdayに,数字をperiodに代入
+                var schedules = td.split(",").map(function (str) { return str.replace(/\s+/g, ""); });
+                var result = schedules.map(function (item) {
+                    var match = item.match(/^([^\d]+)(\d+)$/);
+                    if (match) {
+                        var day = match[1]; //曜日部分の取得
+                        var period = Number(match[2]); //数字部分を取得、number型に変換
+                        return { day: day, period: period }; //オブジェクトの作成
+                    }
+                    else {
+                        console.warn("Invalid schedule format: ".concat(item));
+                        return { day: "他" };
+                    }
+                });
+                data[key] = result;
+                //department,gradeの処理（string[]の処理）
+            }
+            else if ((key == 'department')) {
                 data[key] = td.split(",").map(function (str) { return str.replace(/\s+/g, ""); });
+            }
+            else if ((key == 'grade')) {
+                data[key] = td.split(",").map(function (str) { return Number(str.replace(/\s+/g, "").match(/\d+(\.\d+)?/g)); });
             }
             else if (key == 'credits') {
                 //credits（numberの処理）

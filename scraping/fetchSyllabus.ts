@@ -3,6 +3,11 @@ import * as https from 'https';
 import { constants } from 'crypto';
 import * as cheerio from 'cheerio';
 import * as fs from 'fs';
+//階層構造を持つインターフェースの定義（scheduleのインターフェース定義）
+interface Schedule {
+  day: string;
+  period?: number;
+}
 
 // --- 型定義 ---
 export interface LectureInfo {
@@ -12,9 +17,11 @@ export interface LectureInfo {
   courseType: string;
   timetableCode: string;
   semester: string;
-  schedule: string[];
+  //Scheduleインターフェースをネスト
+  schedule: Schedule[];
+
   department: string[];
-  grade: string[];
+  grade: number[];
   credits: number;
   classroom: string;
   lastUpdated: string;
@@ -77,7 +84,8 @@ const dummyDatas = ["https://kyo-web.teu.ac.jp/syllabus/2025/BT_B10201_ja_JP.htm
                     "https://kyo-web.teu.ac.jp/syllabus/2025/MS_11051M08_ja_JP.html",
                     "https://kyo-web.teu.ac.jp/syllabus/2025/MS_11051M21_ja_JP.html",
                     "https://kyo-web.teu.ac.jp/syllabus/2025/HSH5_W5406_ja_JP.html",
-                    "https://kyo-web.teu.ac.jp/syllabus/2025/CS_C40260_ja_JP.html",]
+                    "https://kyo-web.teu.ac.jp/syllabus/2025/CS_C40260_ja_JP.html",
+                   ]
 
 
 // --- テーブルからデータを抽出 ---
@@ -92,9 +100,30 @@ const extractTableData = ($: cheerio.Root, table: cheerio.Element): Partial<Lect
     const key = keyMap[th];
 
     if (key && td) {
-      //schedule,department,gradeの処理（string[]の処理）
-      if ((key == 'schedule') || (key == 'department') || (key == 'grade')) {
+      //scheduleの処理(Schedule{day, period}の処理)
+      if (key == 'schedule') {
+        //lstをmapで回して数字以外にマッチするものをdayに,数字をperiodに代入
+        const schedules = td.split(",").map(str => str.replace(/\s+/g, ""));
+        const result: Schedule[] = schedules.map(item => {
+          const match = item.match(/^([^\d]+)(\d+)$/)
+          if (match) {
+            const day = match[1]; //曜日部分の取得
+            const period = Number(match[2]); //数字部分を取得、number型に変換
+            return {day, period}; //オブジェクトの作成
+          } else {
+            console.warn(`Invalid schedule format: ${item}`);
+            return { day: "他"};
+          }
+        });
+        data[key] = result;
+
+      //department,gradeの処理（string[]の処理）
+      } else if ((key == 'department')) {
         data[key] = td.split(",").map(str => str.replace(/\s+/g, ""));
+
+      } else if ((key == 'grade')) {
+        data[key] = td.split(",").map(str => Number(str.replace(/\s+/g, "").match(/\d+(\.\d+)?/g)));
+
       } else if (key == 'credits') {
       //credits（numberの処理）
         data[key] = Number(td);
@@ -103,6 +132,7 @@ const extractTableData = ($: cheerio.Root, table: cheerio.Element): Partial<Lect
         data[key] = td;
       }
     }
+
   });
 
   return data;
@@ -166,3 +196,4 @@ main();
 dummyDatas.map(dummyUrl => {
   main(dummyUrl);
 });
+

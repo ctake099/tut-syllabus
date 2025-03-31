@@ -6,14 +6,20 @@
   "timetableCode": "W5406",
   "semester": "2025年度 前期",
   "schedule": [
-    "水4",
-    "水5"
+    {
+      "day": "水",
+      "period": 4
+    },
+    {
+      "day": "水",
+      "period": 5
+    }
   ],
   "department": [
     "医療保健学部"
   ],
   "grade": [
-    "4年"
+    4
   ],
   "credits": 2,
   "classroom": "３０２１１教室",

@@ -6,13 +6,15 @@
   "timetableCode": "K000605",
   "semester": "2025年度 前期",
   "schedule": [
-    "他"
+    {
+      "day": "他"
+    }
   ],
   "department": [
     "工学部応用化学科"
   ],
   "grade": [
-    "4年"
+    4
   ],
   "credits": 8,
   "lastUpdated": "2025/02/06",

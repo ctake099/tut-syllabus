@@ -6,16 +6,19 @@
   "timetableCode": "11051M08",
   "semester": "2025年度 後期",
   "schedule": [
-    "月3"
+    {
+      "day": "月",
+      "period": 3
+    }
   ],
   "department": [
     "メディア学部メディア学科"
   ],
   "grade": [
-    "1年",
-    "2年",
-    "3年",
-    "4年"
+    1,
+    2,
+    3,
+    4
   ],
   "credits": 1,
   "lastUpdated": "2025/02/14",

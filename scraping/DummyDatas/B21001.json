@@ -6,16 +6,19 @@
   "timetableCode": "B21001",
   "semester": "2025年度 後期",
   "schedule": [
-    "火3"
+    {
+      "day": "火",
+      "period": 3
+    }
   ],
   "department": [
     "応用生物学部応用生物学科"
   ],
   "grade": [
-    "1年",
-    "2年",
-    "3年",
-    "4年"
+    1,
+    2,
+    3,
+    4
   ],
   "credits": 2,
   "classroom": "片柳研究所Ｅ４０２",

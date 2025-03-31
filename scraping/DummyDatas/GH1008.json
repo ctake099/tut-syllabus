@@ -6,14 +6,17 @@
   "timetableCode": "GH1008",
   "semester": "2025年度 前期",
   "schedule": [
-    "木3"
+    {
+      "day": "木",
+      "period": 3
+    }
   ],
   "department": [
     "医療技術学研究科修士課程臨床検査学専攻"
   ],
   "grade": [
-    "1年",
-    "2年"
+    1,
+    2
   ],
   "credits": 1,
   "classroom": "Ｍ６１１多目的実習室",

@@ -6,17 +6,29 @@
   "timetableCode": "GF1004",
   "semester": "2024年度 前期",
   "schedule": [
-    "月1",
-    "月2",
-    "火1",
-    "火2"
+    {
+      "day": "月",
+      "period": 1
+    },
+    {
+      "day": "月",
+      "period": 2
+    },
+    {
+      "day": "火",
+      "period": 1
+    },
+    {
+      "day": "火",
+      "period": 2
+    }
   ],
   "department": [
     "デザイン研究科修士課程デザイン専攻"
   ],
   "grade": [
-    "1年",
-    "2年"
+    1,
+    2
   ],
   "credits": 4,
   "classroom": "３１０１６教室",

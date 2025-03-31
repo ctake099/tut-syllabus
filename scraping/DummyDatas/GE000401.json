@@ -6,14 +6,17 @@
   "timetableCode": "GE000401",
   "semester": "2024年度 後期",
   "schedule": [
-    "月3"
+    {
+      "day": "月",
+      "period": 3
+    }
   ],
   "department": [
     "工学研究科博士前期課程サステイナブル工学専攻"
   ],
   "grade": [
-    "1年",
-    "2年"
+    1,
+    2
   ],
   "credits": 1,
   "classroom": "片柳研究所Ｅ３０４",

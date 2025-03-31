@@ -6,16 +6,19 @@
   "timetableCode": "11040B1",
   "semester": "2024年度 前期",
   "schedule": [
-    "水3"
+    {
+      "day": "水",
+      "period": 3
+    }
   ],
   "department": [
     "応用生物学部応用生物学科"
   ],
   "grade": [
-    "1年",
-    "2年",
-    "3年",
-    "4年"
+    1,
+    2,
+    3,
+    4
   ],
   "credits": 2,
   "classroom": "片柳研究所Ｅ４０３",
