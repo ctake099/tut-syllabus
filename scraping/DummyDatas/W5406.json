@@ -1,6 +1,8 @@
 {
   "subjectName": "先端医療総合講義",
-  "instructors": "篠原 一彦 (医療保健学部臨床工学科)",
+  "instructors": [
+    "篠原一彦(医療保健学部臨床工学科)"
+  ],
   "courseCategory": "専門科目",
   "courseType": "講義科目",
   "timetableCode": "W5406",

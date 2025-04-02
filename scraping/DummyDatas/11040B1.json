@@ -1,6 +1,8 @@
 {
   "subjectName": "情報リテラシー[BS]",
-  "instructors": "土井 晃一郎 (応用生物学部応用生物学科)",
+  "instructors": [
+    "土井晃一郎(応用生物学部応用生物学科)"
+  ],
   "courseCategory": "実学基礎科目",
   "courseType": "講義科目",
   "timetableCode": "11040B1",

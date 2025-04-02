@@ -1,6 +1,9 @@
 {
   "subjectName": "遺伝子関連検査学",
-  "instructors": "岡崎 充宏 (医療保健学部臨床検査学科) , 三上 あかね (医療保健学部臨床検査学科)",
+  "instructors": [
+    "岡崎充宏(医療保健学部臨床検査学科)",
+    "三上あかね(医療保健学部臨床検査学科)"
+  ],
   "courseCategory": "専門基礎科目",
   "courseType": "講義科目",
   "timetableCode": "GH1008",

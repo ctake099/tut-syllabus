@@ -1,6 +1,9 @@
 {
   "subjectName": "生体機能代行技術学",
-  "instructors": "上條 史記 (医療保健学部臨床工学科) , 荻野 稔 (医療保健学部臨床工学科)",
+  "instructors": [
+    "上條史記(医療保健学部臨床工学科)",
+    "荻野稔(医療保健学部臨床工学科)"
+  ],
   "courseCategory": "専門科目",
   "courseType": "講義科目",
   "timetableCode": "W2206",

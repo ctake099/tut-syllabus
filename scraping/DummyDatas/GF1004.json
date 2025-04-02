@@ -1,6 +1,8 @@
 {
   "subjectName": "インダストリークリエイションI",
-  "instructors": "伊藤 丙雄 (デザイン学部デザイン学科)",
+  "instructors": [
+    "伊藤丙雄(デザイン学部デザイン学科)"
+  ],
   "courseCategory": "専門科目",
   "courseType": "演習科目",
   "timetableCode": "GF1004",

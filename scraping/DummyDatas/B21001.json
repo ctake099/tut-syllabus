@@ -1,6 +1,8 @@
 {
   "subjectName": "無機化学",
-  "instructors": "柴田 雅史 (応用生物学部応用生物学科)",
+  "instructors": [
+    "柴田雅史(応用生物学部応用生物学科)"
+  ],
   "courseCategory": "専門基礎教育科目",
   "courseType": "講義科目",
   "timetableCode": "B21001",

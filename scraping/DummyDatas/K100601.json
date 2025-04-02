@@ -1,6 +1,8 @@
 {
   "subjectName": "フーリエ解析",
-  "instructors": "余 錦華 (工学部機械工学科)",
+  "instructors": [
+    "余錦華(工学部機械工学科)"
+  ],
   "courseCategory": "専門教育科目",
   "courseType": "講義科目",
   "timetableCode": "K100601",

@@ -1,6 +1,8 @@
 {
   "subjectName": "数学基礎[医療]",
-  "instructors": "須田 拓馬 (教養学環)",
+  "instructors": [
+    "須田拓馬(教養学環)"
+  ],
   "courseCategory": "基礎教育科目",
   "courseType": "講義科目",
   "timetableCode": "T3300",
