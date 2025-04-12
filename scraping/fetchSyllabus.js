@@ -131,9 +131,13 @@ var extractTableData = function ($, table) {
                         }
                     });
                     data[key] = result; // schedule情報を格納
-                    // department や instructors の処理（複数の文字列）
+                    // instructors の処理（複数の文字列とカッコ内消去）
                 }
-                else if (key === 'department' || key === 'instructors') {
+                else if (key === 'instructors') {
+                    data[key] = td.split(",").map(function (str) { return str.replace(/\([^()]*\)/g, "").replace(/\s+/g, ""); });
+                    // departmentの処理（複数の文字列）
+                }
+                else if (key === 'department') {
                     data[key] = td.split(",").map(function (str) { return str.replace(/\s+/g, ""); });
                     // grade（学年）の処理
                 }
@@ -158,7 +162,7 @@ var extractTableData = function ($, table) {
                 // tdが空の場合はnullを設定
                 // ts-ignoreを使って型エラーを無視
                 // @ts-ignore
-                data[key] = null;
+                data[key] = "";
             }
         }
     });
