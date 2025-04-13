@@ -1,0 +1,72 @@
+// Final Prisma schema: optimized for search-relevant fields only, other details kept flat for display
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Lecture {
+  id            Int      @id @default(autoincrement())
+  subjectName   String
+  timetableCode String   @unique
+  credits       Int
+  semester      String
+  grade         Int[]
+  department    String[]
+  createdAt     DateTime @default(now())
+
+  // searchable relations
+  instructors LectureInstructor[]
+  periods     LecturePeriod[]
+
+  // display-only fields (not used for search)
+  classroom          String
+  lastUpdated        String
+  overview           String
+  objectives         String
+  learningOutcomes   String
+  teachingMethod     String
+  notes              String
+  preparation        String
+  evaluation         String
+  textbook           String
+  referenceMaterials String
+  schedulePlan       String
+}
+
+model Instructor {
+  id       Int                 @id @default(autoincrement())
+  name     String              @unique
+  lectures LectureInstructor[]
+}
+
+model LectureInstructor {
+  id           Int @id @default(autoincrement())
+  lectureId    Int
+  instructorId Int
+
+  lecture    Lecture    @relation(fields: [lectureId], references: [id], onDelete: Cascade)
+  instructor Instructor @relation(fields: [instructorId], references: [id], onDelete: Cascade)
+
+  @@unique([lectureId, instructorId])
+  @@index([lectureId])
+  @@index([instructorId])
+}
+
+model LecturePeriod {
+  id        Int    @id @default(autoincrement())
+  day       String
+  period    Int
+  lectureId Int
+
+  lecture Lecture @relation(fields: [lectureId], references: [id], onDelete: Cascade)
+
+  @@index([day])
+  @@index([period])
+  @@index([lectureId])
+}
