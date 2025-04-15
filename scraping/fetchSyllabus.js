@@ -102,6 +102,35 @@ var dummyDatas = [
     "https://kyo-web.teu.ac.jp/syllabus/2025/HSH5_W5406_ja_JP.html",
     "https://kyo-web.teu.ac.jp/syllabus/2025/CS_C40260_ja_JP.html"
 ];
+//インターフェースを初期化する関数
+// nullが確認された項目:department,classroom,learningOutcomes,referenceMaterials
+function createDefaultObject() {
+    var result = {
+        subjectName: "",
+        instructors: [],
+        courseCategory: "",
+        courseType: "",
+        timetableCode: "",
+        semester: "",
+        schedule: [],
+        department: null,
+        grade: [],
+        credits: 0,
+        classroom: null,
+        lastUpdated: "",
+        overview: "",
+        objectives: "",
+        learningOutcomes: null,
+        teachingMethod: "",
+        notes: "",
+        preparation: "",
+        evaluation: "",
+        textbook: "",
+        referenceMaterials: null,
+        schedulePlan: "",
+    };
+    return result;
+}
 // HTMLテーブルからデータを抽出する関数
 var extractTableData = function ($, table) {
     var data = {}; // データ格納用オブジェクト
@@ -127,7 +156,7 @@ var extractTableData = function ($, table) {
                             return { day: day, period: period }; // 結果をオブジェクトで返す
                         }
                         else {
-                            return { day: "他", period: null }; // フォーマットが不正な場合
+                            return { day: "他", period: null };
                         }
                     });
                     data[key] = result; // schedule情報を格納
@@ -157,12 +186,6 @@ var extractTableData = function ($, table) {
                 else {
                     data[key] = td;
                 }
-            }
-            else {
-                // tdが空の場合はnullを設定
-                // ts-ignoreを使って型エラーを無視
-                // @ts-ignore
-                data[key] = "";
             }
         }
     });
@@ -196,7 +219,7 @@ var main = function (url) { return __awaiter(void 0, void 0, void 0, function ()
                 }
                 basicData = extractTableData($, basicTable);
                 detailData = extractTableData($, detailTable);
-                lectureInfo = __assign(__assign({}, basicData), detailData);
+                lectureInfo = __assign(__assign(__assign({}, createDefaultObject()), basicData), detailData);
                 // JSONとしてファイルに保存
                 return [4 /*yield*/, fs.promises.writeFile("DummyDatas/".concat(basicData.timetableCode, ".json"), JSON.stringify(lectureInfo, null, 2), 'utf8')];
             case 2:
