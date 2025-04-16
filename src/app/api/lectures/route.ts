@@ -13,6 +13,19 @@ export async function GET(req: NextRequest) {
   const gradeParam = searchParams.get('grade')
   const grade = gradeParam ? parseInt(gradeParam, 10) : undefined
 
+  const slots = searchParams.getAll('slot') // 例: ["月-1", "金-2"]
+  const periodFilters = slots.map((slot) => {
+    const [day, periodStr] = slot.split('-')
+    return {
+      periods: {
+        some: {
+          day,
+          period: parseInt(periodStr, 10),
+        },
+      },
+    }
+  })
+
   console.log("🔍 q =", q)
   console.log("🔍 instructor =", instructor)
   console.log("🔍 day =", day)
@@ -24,7 +37,7 @@ export async function GET(req: NextRequest) {
       ...(q && {
         subjectName: {
           contains: q,
-          mode: 'insensitive',
+          mode: 'insensitive' as const,
         },
       }),
       ...(grade !== undefined && {
@@ -38,20 +51,16 @@ export async function GET(req: NextRequest) {
             instructor: {
               name: {
                 contains: instructor,
-                mode: 'insensitive',
+                mode: 'insensitive' as const,
               },
             },
           },
         },
       }),
-      ...(day || period !== undefined ? {
-        periods: {
-          some: {
-            ...(day && { day }),
-            ...(period !== undefined && { period }),
-          },
-        },
-      } : {}),
+
+      ...(periodFilters.length > 0 && {
+        OR: periodFilters, // ← 複数 (day, period) の OR
+      }),
     }
 
     console.log("📦 where clause", whereClause)

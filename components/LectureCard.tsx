@@ -12,9 +12,9 @@ import {
 } from "@mui/material";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { useState, useRef, useCallback } from "react";
-import { LectureInfo } from "@/types/lecture";
+import { LectureFromAPI } from "@/types/lecture";
 
-export default function LectureCard({ lecture }: { lecture: LectureInfo }) {
+export default function LectureCard({ lecture }: { lecture: LectureFromAPI }) {
   const [popperOpen, setPopperOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [popperMessage, setPopperMessage] = useState("コピーする");
@@ -71,12 +71,14 @@ export default function LectureCard({ lecture }: { lecture: LectureInfo }) {
 
           {lecture.instructors?.length > 0 && (
             <Typography variant="body2" color="text.secondary" sx={{ wordBreak: "break-word" }}>
-              {lecture.instructors.join(" / ")}
+              {lecture.instructors
+                .map((inst) => inst.instructor.name)
+                .join(" / ")}
             </Typography>
           )}
 
           <Box mt={1} display="flex" gap={1} flexWrap="wrap">
-            {lecture.schedule?.map((sch, i) => (
+            {lecture.periods?.map((sch, i) => (
               <Chip
                 key={`sch-${i}`}
                 label={`${sch.day ?? "?"}${sch.period ?? ""}`}
