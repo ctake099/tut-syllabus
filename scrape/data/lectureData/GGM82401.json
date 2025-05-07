@@ -1,0 +1,35 @@
+{
+  "subjectName": "Advanced Natural Language Processing",
+  "instructors": [
+    "松吉俊(メディア学部メディア学科)"
+  ],
+  "courseCategory": "専門科目",
+  "courseType": "講義科目",
+  "timetableCode": "GGM82401",
+  "semester": "2025年度 後期",
+  "schedule": [
+    {
+      "day": "金",
+      "period": 5
+    }
+  ],
+  "department": [
+    "バイオ・情報メディア研究科博士前期課程メディアサイエンス専攻"
+  ],
+  "grade": [
+    1,
+    2
+  ],
+  "credits": 1,
+  "classroom": "講義実験棟２０３",
+  "lastUpdated": "2025/03/12",
+  "overview": "Natural language processing (NLP) is one of the fields of Artificial intelligence (AI), which has several applications such as machine translation, information retrieval, and automatic dialogue system. In this course, the students learn basic and important NLP technologies with deep learning.",
+  "objectives": "The students learn basic and important NLP technologies with deep learning.",
+  "teachingMethod": "The students are required to read original papers of basic NLP technologies. They are expected to use laptop computers for presentation.",
+  "notes": "The students are expected to have a knowledge on the basic of probabilities, matrices and neural networks.",
+  "preparation": "The students are required to read an assigned paper for attending the class each time.",
+  "evaluation": "Weekly assignments (75%) and final report (25%).",
+  "textbook": "No textbook is specified.",
+  "referenceMaterials": "- Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean: Efficient Estimation of Word Representations in Vector Space - Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova: BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding - Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang: REALM: Retrieval-Augmented Language Model Pre-Training",
+  "schedulePlan": "Week 1: Efficient Estimation of Word Representations in Vector Space (1) Week 2: Efficient Estimation of Word Representations in Vector Space (2) Week 3: BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding (1) Week 4: BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding (2) Week 5: BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding (3) Week 6: REALM: Retrieval-Augmented Language Model Pre-Training (1) Week 7: REALM: Retrieval-Augmented Language Model Pre-Training (2)"
+}

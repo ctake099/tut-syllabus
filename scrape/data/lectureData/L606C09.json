@@ -1,0 +1,37 @@
+{
+  "subjectName": "Integrated English II[9]CS機械",
+  "instructors": [
+    "近藤紀彦(兼任講師)"
+  ],
+  "courseCategory": "実学基礎科目",
+  "courseType": "演習科目",
+  "timetableCode": "L606C09",
+  "semester": "2025年度 後期",
+  "schedule": [
+    {
+      "day": "木",
+      "period": 2
+    }
+  ],
+  "department": [
+    "コンピュータサイエンス学部コンピュータサイエンス学科",
+    "工学部機械工学科"
+  ],
+  "grade": [
+    2,
+    3,
+    4
+  ],
+  "credits": 1,
+  "classroom": "片柳研究所Ｅ１０４",
+  "lastUpdated": "2025/01/21",
+  "overview": "Integrated English Iの内容をレベルアップし、より実践的な英語力の向上を目的とする。Integrated English Iと同様に、学生の興味・関心や進路に即した内容を学習することを通じて英語の4技能のスキルアップや国際的教養、ビジネス英語のさらなる修得をめざす。 この授業では、TOEICを題材とする教材を用いて、リスニング力＆リーディング力を鍛え、TOEICの問題形式、英語表現、パターン等を習得し英語力の向上を目指す。TOEIC350～450レベルの到達を目標とする。 なお、この科目は前・後期続けて履修することを推める。",
+  "objectives": "１．語彙力を強化する。 ２．具体的な事象に関して自らの考えを加えながら説明できる。 ３．批評的思考（クリティカルシンキング）によって、分析・評価ができる。 ４．グローバル時代に必要な国際的な教養力を身につける。",
+  "teachingMethod": "➀授業では、毎回１つのユニットに取り組む。 ②授業前半は予習したVocabulary(Vocabulary Building)の確認、語彙の意味および類似表現の確認をおこなう。 ③授業後半は、英文法の重要ポイントを確認し、リスニング＆リーディング問題における重要文法項目を再確認していく。 ④ノートテーキング及び教員の指示がある時のみノートPCを使用する。また、内容について適時グループディスカッション又はペア・グループワークをおこなう。 ⑤フィードバックは授業中におこない、解説する。",
+  "notes": "➀毎回授業で教科書の問題を解いていくため、コピーではなく自身の教科書を必ず持参すること。 ②単語、イディオム等の意味を調べるため、毎回授業には辞書を必ず持参すること。 ③次回の授業までに、「準備学習」、「予習」を十分におこない、授業後は「復習」をしっかりおこなう。 ④各ユニットのVocabulary(Vocabulary Building)は、授業が始まるまでに辞書等で意味を調べておく。 ⑤各ユニットのListeningセクションにおけるTips、およびReadingセクションにおけるOne Point Grammarは、授業開始までに目を通しておく。",
+  "preparation": "➀各ユニットのVocabulary(Vocabulary Building)は、授業開始までに辞書等で意味を調べておく。（約30分） ②各ユニットのListeningセクションにおけるTips、およびReadingセクションにおけるOne Point Grammarは、授業開始までに一読しておく。（約30分）",
+  "evaluation": "「授業参加姿勢 (30%)」「課題点 (30％)」「到達度チェック (40％)」を総合的に評価する。合格点は60％とする。 授業参加姿勢とは、積極的な発言、質問、グループワークやペアワーク等授業内活動に取り組む姿勢や予習・復習状況確認のために実施する小テストの結果に関する評価を含む。 課題に対するフィードバックは授業時間内、あるいはMoodleなどを通じて随時行う。",
+  "textbook": "Chizuko Tsumatori and Masumi Tahira著; First Time Trainer for the TOEIC Test [Revised]; Cengage Learning K.K.; ISBN: 978-4-86312-293-2; 2,310円（税込）",
+  "referenceMaterials": "授業内で適宜指示する。",
+  "schedulePlan": "第1回：授業についてのガイダンス＋Unit1 “Shopping” 人物写真 第2回：Unit2 “Daily Life” モノ・風景写真 第3回：Unit3 “Transportation” 冒頭の疑問詞がカギ 第4回：確認チェック（１）＋Unit4 “Jobs” Yes/No 疑問文 第5回：Unit5 “Meals” 付加疑問文のコツ 第6回：Unit6 “Communication”&nbsp;&nbsp;会話が成立するかどうか 第7回：確認チェック（２）＋Unit7 “Fun” 提案・勧誘・依頼の表現 第8回：Unit8 “Office Work” 設問先読み 第9回：Unit9 “Meeting” 全体を問う設問 第10回：確認チェック（３）＋Unit10 “Travel” 部分を問う設問 第11回：Unit11 “Finance” 未来の行動を問う設問 第12回：Unit12 “Business” 言い換え表現（１） 第13回：確認チェック（４）＋Unit12 “Business” 言い換え表現（２） 第14回：まとめ"
+}

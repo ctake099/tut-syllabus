@@ -1,0 +1,35 @@
+{
+  "subjectName": "音楽サウンド制作特論",
+  "instructors": [
+    "伊藤謙一郎(メディア学部メディア学科)"
+  ],
+  "courseCategory": "専門科目",
+  "courseType": "講義科目",
+  "timetableCode": "GGM10401",
+  "semester": "2025年度 前期",
+  "schedule": [
+    {
+      "day": "金",
+      "period": 5
+    }
+  ],
+  "department": [
+    "バイオ・情報メディア研究科博士前期課程メディアサイエンス専攻"
+  ],
+  "grade": [
+    1,
+    2
+  ],
+  "credits": 1,
+  "classroom": null,
+  "lastUpdated": "2025/03/15",
+  "overview": "電子音あるいは電気的処理を通して作られた音楽・音響作品の変遷を概観し、それらの延長線上にコンピュータを用いた今日の音楽の諸相が成立していることを論ずる。西洋音楽における作曲技法と戦後の電子音楽との関連、またミュージック・コンクレートなどに見られる環境音も含めた音素材の拡張と編集・変調技法などに触れ、今日のさまざまな音楽・音響コンテンツがそれらの歴史の上に立脚するものであることを示す。 This course will review the evolution of music and sound works created through electronic sounds or electrical processing, and discuss how the various aspects of today's computer-based music have been established as an extension of these works. The lecture will touch on the connection between compositional techniques in Western music and post-war electronic music, as well as the expansion of sound materials, including environmental sounds, and editing and modulation techniques seen in music concrete, etc., and show that present-day various musical and acoustic contents are based on the history of these techniques.",
+  "objectives": "今日の音楽やその制作手法が、音楽史の流れに連なるものとして理解するとともに、20世紀以降のテクノロジーの発達とのつながりを踏まえて、今後の創作への多角的な視点をもてるようにする。 To understand present-day music and its production methods as linked to the flow of music history, and to gain a multifaceted perspective on future creation in light of the connection with the development of technology since the 20th century.",
+  "teachingMethod": "主にpower pointのスライドを用いて講義する。必要に応じて楽譜や各種資料を配布し、作品の鑑賞も行う。ノートPCは、授業資料の確認や小課題の実施に使うので毎回持参すること。 Lectures will be given mainly using power point slides. Sheet music and other materials will be distributed as necessary, and students will be able to view the works. Students are required to bring their own laptop computer for checking the lecture materials and doing small assignments.",
+  "notes": "音楽・音響について基本的な内容を学習していることが望ましい。専門用語に関してはわかりやすい説明を心がけるが、わからないことがあれば積極的に質問したり調べたりするなどして授業内容の理解に努めてほしい。 It is desirable to have a basic understanding of music and acoustics. I will try to explain technical terms in an easy-to-understand manner, but if there is something you do not understand, please try to understand the class content by actively asking questions and doing research.",
+  "preparation": "毎回、授業スライドを事前にアップロードするので内容を確認し、その中で紹介されている視聴覚資料を鑑賞しておくこと（60分程度）。また、授業で扱った内容についてさらに詳しく情報を収集し、自らの考察や感想をまとめたレポートを提出すること（60分程度）。 Slide presentation will be uploaded in advance of each class, so students should review the content and view the audiovisual materials introduced in the presentation (approximately 60 minutes). In addition, students are required to gather more detailed information on the topics covered in class and submit a report summarizing their own reflections and impressions (approximately 60 minutes).",
+  "evaluation": "各回の授業レポート【70％】、授業時間内の小課題【10％】、最終レポート【20％】で評価し、60点以上を単位認定要件とする。小課題については次回授業内でフィードバックを行う。また、各回の授業レポートは必要に応じてフィードバックを行うことがある。 Evaluation will be based on class reports (70%), in-class assignments (10%), and a final report (20%), with a score of 60 or higher being required for credit. Feedback will be given on the minor assignments in the next class. Feedback on each class report may also be given as necessary.",
+  "textbook": "指定しない Not designated",
+  "referenceMaterials": "指定しない Not designated",
+  "schedulePlan": "第1回：授業概要説明／西洋音楽史概観（19世紀まで） 第2回：西洋音楽史概観（20世紀以降） 第3回：電子音楽とミュージック・コンクレート 第4回：電子楽器の変遷 第5回：テクノロジーの発達と音楽制作手法の変遷（１） 第6回：テクノロジーの発達と音楽制作手法の変遷（２） 第7回：音楽・音響作品の新たな潮流／まとめ Part 1: Course outline / Overview of Western Music History (up to the 19th century) Part 2: Overview of Western Music History (20th century and beyond) Part 3: Electronic Music and Musique Concrète (meaning \"Concrete Music\")&nbsp;&nbsp; Part 4: Changes in Electronic Musical Instruments Part 5: Technological Development and Changes in Music Production Techniques (1) Part 6: Technological Development and Changes in Music Production Techniques (2) Part 7: New Trends in Music and Sound Works / Final summary"
+}

@@ -1,0 +1,34 @@
+{
+  "subjectName": "リベラルアーツ特論[Linguistics in the Digital Age]",
+  "instructors": [
+    "ブロックルバンク(教養学環)"
+  ],
+  "courseCategory": "実学基礎科目",
+  "courseType": "講義科目",
+  "timetableCode": "L10104",
+  "semester": "2025年度 後期",
+  "schedule": [
+    {
+      "day": "金",
+      "period": 3
+    }
+  ],
+  "department": null,
+  "grade": [
+    2,
+    3,
+    4
+  ],
+  "credits": 2,
+  "classroom": "講義実験棟３０１",
+  "lastUpdated": "2025/01/21",
+  "overview": "One thing which makes human beings different from other species is our ability to use language. Designed for beginners, this course aims to introduce students to linguistics, the scientific study of language. We will look at how researchers typically analyze the sounds, words and sentence structures of languages, and how meaning is expressed linguistically. We will also see how advances in technology have allowed researchers to identify patterns in language that would otherwise be undetectable.",
+  "objectives": "The course aims to encourage curiosity in students about their own native languages and about the diversity of languages worldwide. By the end of the course, they will have been introduced to the basic tools for analyzing language systematically and will have a deeper appreciation for its role in communication and human connection.",
+  "teachingMethod": "This is a lecture-based course. However, in the last half hour of each class, students will be given the opportunity to discuss the topics covered and work together on problems that make use of the concepts that have been introduced in the lecture. Review exercises for each class will be uploaded to the course Moodle page. Students should make sure they have some way of accessing these exercises, ex. a laptop computer.",
+  "notes": "・The maximum number of students allowed to take this course is 10. ・Prospective students should note that all of the lectures will be delivered in English. ・Students are expected to attend and be on time for each lecture. ・Students should feel free to ask questions if there is anything in the lecture that they are unsure about, either directly to the teacher or via email after class.",
+  "preparation": "PREPARATION: Students are strongly encouraged to read about each topic in the week before the lecture that covers it. (See 「参考書」for a reading suggestion.) REVIEW: Students are expected to review the content of each lecture and to tackle the review exercises on the Moodle page in the week after the class. As most of the linguistic examples in the course will be based on Standard (British) English, students should also think about how the concepts covered in the lectures relate to their own native language.",
+  "evaluation": "Grading will be as follows: ・40% for review exercises and assignments ・60% for the final course review test Feedback on assignments will be provided during the lecture or via Moodle.",
+  "textbook": "None, but see below.",
+  "referenceMaterials": "The following book, which covers nearly all of the linguistic sub-fields dealt&nbsp;&nbsp;with in the course, is recommended as extra reading: ・Roberts, Ian G.(2017). The Wonders of Language. Cambridge: Cambridge University Press.",
+  "schedulePlan": "第1回：Course Introduction 第2回：Sounds (PHONETICS) 第3回：Patterns of Sounds (PHONOLOGY) 第4回：Words (MORPHOLOGY) 第5回：Putting Words Together (SYNTAX) 第6回：Meaning Structures (SEMANTICS) 第7回：Meaning in Use (PRAGMATICS) 第8回：Using Computers to Study Language 1 (CORPUS LINGUISTICS) 第9回：Using Computers to Study Language 2 (CORPUS LINGUISTICS) 第10回：Languages in Time (HISTORICAL LINGUISTICS) 第11回：Language and Society (SOCIOLINGUISTICS) 第12回：Language, Mind and Brain (PSYCHOLINGUISTICS) 第13回：Languages - Differences and Similarities (LANGUAGE TYPOLOGY AND UNIVERSALS) 第14回：Course Review"
+}

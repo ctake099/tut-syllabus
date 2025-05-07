@@ -1,0 +1,38 @@
+{
+  "subjectName": "Integrated English I[1]BS電電応化",
+  "instructors": [
+    "清水友子(兼任講師)"
+  ],
+  "courseCategory": "実学基礎科目",
+  "courseType": "演習科目",
+  "timetableCode": "L605B01",
+  "semester": "2025年度 前期",
+  "schedule": [
+    {
+      "day": "月",
+      "period": 2
+    }
+  ],
+  "department": [
+    "応用生物学部応用生物学科",
+    "工学部電気電子工学科",
+    "工学部応用化学科"
+  ],
+  "grade": [
+    2,
+    3,
+    4
+  ],
+  "credits": 1,
+  "classroom": "講義実験棟３０４",
+  "lastUpdated": "2025/01/24",
+  "overview": "１年次の学習を総合して、より高度な英語の運用能力の向上をめざす。英語ネイティブスピーカーによるCommunication skillsの向上、学際的的な内容を扱うAcademic&nbsp;&nbsp;English、グローバル時代の国際理解に必要な文化と社会に関する知識の修得をめざすCultural Studies、TOEICやビジネス英語扱うBusiness/TOEICなどを通じて、学生の興味・関心や進路に即したより高度な英語力の修得をめざす。 この授業では、現在世界で起こっている出来事や、現代社会の課題について、CLIL（内容言語統合型学習）の手法を取り入れながら、英語で学習する。各トピックについて、英文テキストを読み、考え、自分の意見を表現し、クラスメートと共有することによって、英語の４技能を最大限使えるようになることを目指す。また、世界で起きていることに関心を持ち、問題意識を高める機会にもなる。英語力TOEIC500点ぐらいの到達を目指す。なお、この科目は前・後期続けて履修することをすすめる（後期はSDGsについて学習する）。",
+  "objectives": "１．語彙力を強化する。 ２．具体的な事象に関して自らの考えを加えながら説明できる。 ３．批評的思考（クリティカルシンキング）によって、分析・評価ができる。 ４．グローバル時代に必要な国際的な教養力を身につける。",
+  "teachingMethod": "基本的に、テキストに沿って学習する。授業の進め方は次の通り 1) Warm up (Listening &amp; Vocabulary)&nbsp;&nbsp;2) Reading&nbsp;&nbsp;&nbsp;3) データを読み取る演習&nbsp;&nbsp;4) 自分の意見を表現・ディスカッション&nbsp;&nbsp;&nbsp;授業では、ペアワークやグループワークで確認してから、クラス全体で共有するアクティブラーニング方式で進める。課題は、3章ごとにReflection Paper (振り返り）をGoogle Classroom から提出し、Feedbackも返却。また、学期末にFinal Projectとして、各自興味のある時事問題・社会課題について調べ、ミニ発表の機会あり（この際、PC持参必要）。",
+  "notes": "教科書持参は必須。知らない単語の意味を調べるため、辞書も持参すること。",
+  "preparation": "予習課題: Vocabulary Check / Reading テキストを読み、タイトル選択問題に解答 (約30-40分） 復習課題： 各章のDiscussion Questionで自分の意見を書き、3課ごとにMoodleに提出(約20分)",
+  "evaluation": "「授業参加姿勢 (30%)」「課題点 (30％)」「到達度チェック (40％)」を総合的に評価する。合格点は60％とする。 授業参加姿勢とは、積極的な発言、質問、グループワークやペアワーク等授業内活動に取り組む姿勢や予習・復習状況確認のために実施する小テストの結果に関する評価を含む。 課題に対するフィードバックは授業時間内、あるいはMoodleなどを通じて随時行う。",
+  "textbook": "仲谷都・油木田美由紀・山崎勝・Bill Benfield著; CLIL: Discuss the Changing World 2; 成美堂; ISBN 978-4-7919-7268-5; 2640円",
+  "referenceMaterials": "特になし",
+  "schedulePlan": "第１回 Introduction&nbsp;&nbsp; 第２回 Unit 1: Pandemic and People's Lifestyle 第３回 Unit 2: The Circular Economy (仮） 第４回 Unit 3: Road to Decarbonization (仮） 第５回 Unit 4: Online Learning and School Life（仮） 第６回 Unit 5: Delivery Robots （仮） 第７回 Unit 6: Discrimination against Asian Americans (仮） 第８回 Unit 7: Gendered Division of Housework （仮） 第９回 Unit 8: Preparing for Emergencies 第１０回 Unit 9: Ukraine and Afghanistan (仮） 第１１回 Unit 10: Digital Sociey （仮） 第１２回 Final Project: Preparation 第１３回 Final Project: Presentation 第１４回 到達度チェック・まとめ"
+}

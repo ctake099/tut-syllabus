@@ -1,0 +1,35 @@
+{
+  "subjectName": "ヘルスケア産業特論",
+  "instructors": [
+    "横山憲二(応用生物学部応用生物学科)"
+  ],
+  "courseCategory": "専門科目",
+  "courseType": "講義科目",
+  "timetableCode": "GGB14001",
+  "semester": "2025年度 前期",
+  "schedule": [
+    {
+      "day": "金",
+      "period": 2
+    }
+  ],
+  "department": [
+    "バイオ・情報メディア研究科博士前期課程バイオニクス専攻"
+  ],
+  "grade": [
+    1,
+    2
+  ],
+  "credits": 1,
+  "classroom": "片柳研究所Ｅ３０２",
+  "lastUpdated": "2025/03/12",
+  "overview": "健康長寿社会実現のための様々な医薬品、医療・健康機器が研究、開発されている。本講義では、これまでに実用化されてきた医薬品、医療・健康機器を取り上げ、その研究開発のトピックスを紹介する。具体的には、①ヘルスケア産業の概説、②糖尿病診断機器、糖尿病治療薬、③Point-Of-Care-Testing機器、ウエアラブル機器④最新のがん診断法、診断機器、プロテオーム等の疾患関連因子の分析機器、⑤日米株式市場から見た日米ヘルスケア企業などを取り上げ解説する。 Various pharmaceuticals and medical/healthcare devices are being researched and developed to realize a society of healthy longevity. This lecture will focus on pharmaceuticals and medical/healthcare devices that have been put to practical use so far, and introduce the topics of their research and development. Specifically, the lecture will cover: 1) an overview of the healthcare industry; 2) diabetes diagnostic devices and diabetes treatment drugs; 3) point-of-care-testing devices and wearable devices; 4) the latest cancer diagnostic methods, diagnostic devices, and analytical devices for disease-related factors such as proteomes; and 5) Japanese and US healthcare companies as viewed from the Japanese and US stock markets.",
+  "objectives": "本講義では、ヘルスケア産業についての実学に基づく専門力を身につけることを目指す。すなわち、最新の医薬品、ヘルスケア機器（医療・健康機器）開発状況を把握し、分析評価能力を身につけることである。さらに、自分が開発担当者になった場合を想定し、どのようなヘルスケア製品が社会で求められているか、アイデアを出せるようになることが目標である。 This course aims to provide students with practical expertise in the healthcare industry. In other words, students will be able to grasp the latest developments in pharmaceuticals and healthcare equipment (medical and health equipment) and acquire analytical and evaluation skills. Furthermore, students will be able to imagine themselves as developers and come up with ideas for what kind of healthcare products society needs.",
+  "teachingMethod": "1回目から4回目までは、講義を中心に行うが、適宜、ビデオ学習を取り入れる。講義開始前までにMoodleにスライドPDFファイルをアップロードしておく。講義前後、講義中、端末にダウンロードして利用することができる。5～7回目では、ヘルスケア関連製品の企画、開発に関するシミュレーションとそのプレゼンテーションを受講者が行う。個人による発表を想定しているが、受講者数により、グループ発表とする場合がある。ノートPCは、講義時間中の資料の閲覧に有用であり、プレゼンテーションには必須である。 The first four sessions will mainly consist of lectures, but video learning will be incorporated where appropriate. Slide PDF files will be uploaded to Moodle before the lecture begins. They can be downloaded to devices and used before, during and after the lecture. In sessions five to seven, participants will carry out a simulation and presentation on the planning and development of healthcare-related products. Individual presentations are expected, but depending on the number of participants, they may be held as group presentations. Laptops will be useful for viewing materials during lectures and are essential for presentations.",
+  "notes": "学部レベルの生化学（生命科学、生物化学）、分析化学関連（分析化学、機器分析、バイオメディカル分析）等の講義内容については、理解しておくことが望ましい。 It is desirable to have an understanding of the contents of lectures on undergraduate level biochemistry (life science, biochemistry) and analytical chemistry (analytical chemistry, instrumental analysis, biomedical analysis), etc.",
+  "preparation": "予習：ヘルスケアビジネスに関する企画、開発のシミュレーション、およびそのプレゼンテーションを行うための準備を行う。 復習：講義で解説された医薬品、ヘルスケア機器開発に関して、再度自主的に分析し、プレゼンテーションにつなげる。 Preparation: Prepare to plan, simulate and present a healthcare business-related project. Review: Students will independently re-analyze the pharmaceutical and healthcare device development topics explained in the lectures and use them to create a presentation.",
+  "evaluation": "小レポート30%、プレゼンテーション70%で評価する。 The evaluation will be based on 30% of the short report and 70% of the presentation.",
+  "textbook": "なし None",
+  "referenceMaterials": "ユビキタス・バイオセンシングによる健康医療科学（三林浩二監修、シーエムシー出版）、ヘルスケアビジネス成長戦略研究（松室孝明著、ダイヤモンド社）など。 Publications include Health and Medical Sciences Using Ubiquitous Biosensing (edited by Koji Mitsubayashi, published by CMC Publishing) and Research on Growth Strategies for Healthcare Business (written by Takaaki Matsumuro, published by Diamond Inc.).",
+  "schedulePlan": "第1回：ヘルスケア産業の概説 Introduction to healthcare industry 第2回：糖尿病治療薬、糖尿病診断ツール Pharmaceuticals and diagnostic tools for diabetes mellitus 第3回：ウエアラブル・バイオセンシング Point-of-care-testing and wearable biosensing devices 第4回：株式市場から見た日米ヘルスケア企業分析 Japan and US healthcare companies from point of view of stock market 第5回：新規ヘルスケア産業の企画、開発に関するシミュレーション、プレゼンテーション 1回目 Presentation by participating students - Research, development and business model of healthcare I 第6回：新規ヘルスケア産業の企画、開発に関するシミュレーション、プレゼンテーション 2回目 Presentation by participating students - Research, development and business model of healthcare II 第7回：新規ヘルスケア産業の企画、開発に関するシミュレーション、プレゼンテーション 3回目 Presentation by participating students - Research, development and business model of healthcare III"
+}

@@ -1,0 +1,35 @@
+{
+  "subjectName": "発酵食品学特論",
+  "instructors": [
+    "中村知世(応用生物学部応用生物学科)"
+  ],
+  "courseCategory": "専門科目",
+  "courseType": "講義科目",
+  "timetableCode": "GGB13401",
+  "semester": "2025年度 後期",
+  "schedule": [
+    {
+      "day": "木",
+      "period": 2
+    }
+  ],
+  "department": [
+    "バイオ・情報メディア研究科博士前期課程バイオニクス専攻"
+  ],
+  "grade": [
+    1,
+    2
+  ],
+  "credits": 1,
+  "classroom": "片柳研究所Ｅ２０３",
+  "lastUpdated": "2025/01/07",
+  "overview": "発酵食品は微生物の発酵によって食品が変化し、味や栄養価が高まった食品のことをいう。発酵食品は身近なものであるが、食品により様々な微生物が関与して異なった働きをしている。本講義では、どのような発酵食品が存在し、その発酵食品にはどのような微生物が関わり、どのような製造方法で食品が作られているのかについて解説を行う。最終回には各自が興味を持った発酵食品についてプレゼンテーションを行ってもらう。 Fermented foods have been transformed by microbial fermentation, resulting in increased flavor and nutritional value. Fermented foods are well known, and different microorganisms are involved in different functions of different foods. In this course we will explain what types of fermented foods there are, what types of microorganisms are involved in these fermented foods and how they are produced. In the final chapter, students will be asked to give a presentation on a fermented food of their own interest.",
+  "objectives": "発酵食品への理解を深めることで、微生物や食品に対する知識を身に着ける。これにより社会での食品における微生物の利用技術についての実学に基づく専門能力を身に付けることを目指す。 各回で提出する課題で論理的な思考力と問題解決能力を、最終回のプレゼンテーションでコミュニケーション能力と論理的な思考力、問題解決力を養うことを目指す。 By deepening their understanding of fermented foods, students will gain knowledge of microorganisms and food. In doing so, the course aims to develop professional skills based on practical learning about the technology of using microorganisms in food products in society. The course aims to develop logical thinking and problem solving skills through assignments submitted at each chapter and communication, logical thinking and problem solving skills through presentations at the final chapter.",
+  "teachingMethod": "講義形式で行う。各回のノートPCの持参は必須ではないが、最終回のプレゼンテーションではPCを使用して発表してもらうため、必ず持参すること。 The course will be delivered in a lecture format. It is not compulsory to bring a PC for each chapter, but students will be asked to use a PC for the final chapter, so it is essential to bring one.",
+  "notes": "学部で開講している微生物系、食品系の講義の復習を十分に行っておくこと。他専攻の学生が履修する場合は、事前に履修に関する連絡をすること。連絡がなかった場合、履修を許可しないことがあります。 Students should carefully study the undergraduate course on microbiology and food science. If students from other departments wish to take the course, they must contact the department in advance. If no contact is made, the student may not be allowed to take the course.",
+  "preparation": "各講義毎に課題を提示するので、各自で調査し提出すること。また最終回には各自が興味のある発酵食品について発表してもらうので、そのための準備をしておくこと。 Each chapter will be accompanied by an assignment, which the students should research and submit themselves. In the final chapter, students will be asked to give a presentation on a fermented food of interest to them, so they should be prepared for this.",
+  "evaluation": "出席を前提に、各講義毎の課題（30％）とプレゼンテーション（70％）で評価する。なお、各課題については次回講義の中でフィードバックを行う。 Assignments (30%) for each chapter and presentation (70%) will be assessed on the basis of attendance. Feedback on each assignment will be given in the next chapter.",
+  "textbook": "特に指定しない。 Not specified.",
+  "referenceMaterials": "「発酵食品学」 小泉武雄 著 講談社",
+  "schedulePlan": "第1回：発酵について 第2回：酒類について①：清酒 第3回：酒類について②：ワイン、ビールなど 第4回：調味料について：味噌、醤油 第5回：調味料などについて：食酢、漬物など 第6回：その他の発酵食品：ヨーグルト、チーズなど 第7回：プレゼンテーション Chapter 1: About fermentation Chapter 2: Alcoholic beverages (1): sake Chapter 3: Alcoholic beverages (2): wine, beer, etc. Chapter 4: Condiments: miso, soy sauce Chapter 5: Condiments: vinegar, pickles, etc. Chapter 6: Other fermented foods: yoghurt, cheese, etc. Chapter 7: Presentation"
+}

@@ -1,0 +1,35 @@
+{
+  "subjectName": "先端音声処理特論",
+  "instructors": [
+    "大淵康成(メディア学部メディア学科)"
+  ],
+  "courseCategory": "専門科目",
+  "courseType": "講義科目",
+  "timetableCode": "GGM11001",
+  "semester": "2025年度 前期",
+  "schedule": [
+    {
+      "day": "月",
+      "period": 2
+    }
+  ],
+  "department": [
+    "バイオ・情報メディア研究科博士前期課程メディアサイエンス専攻"
+  ],
+  "grade": [
+    1,
+    2
+  ],
+  "credits": 1,
+  "classroom": "片柳研究所Ｅ２０３",
+  "lastUpdated": "2025/03/11",
+  "overview": "近年のメディア処理では、大量のデータからコンピュータが自動的に法則性を抽出する、いわゆる機械学習の枠組みが大きな役割を果たしている。本講義では、様々な機械学習の方式が、音声や音響のデータに対してどのように使われているのかを学ぶ。また、機械学習を行うための準備として必要となる、データ収集、ラベリング、特徴抽出、評価実験などについても学ぶ。 The framework of machine learning, in which computers find common rules from large-scale data, is becoming important in modern media processing. In this class, we study how the machine learning methods are applied to speech and audio data. We also study data collection, labeling, feature extraction, and evaluation experiments, which are important in the preparation phase.",
+  "objectives": "様々な機械学習方式の違いを理解し、自らの問題に適した方式を選択できるようになる。 音声・音響処理に関する英語論文を読み、その内容を説明できるようになる。 Students are expected to understand the characteristics of various machine learning methods and choose appropriate ones. It is also expected to read, understand, and explain various English papers about speech and audio processing.",
+  "teachingMethod": "ノートＰＣ必携のアクティブラーニング科目である。基本的な内容に関する講義を行う形式と、与えられた英語論文を各自が紹介するゼミ形式とを並行して行う。 A laptop PC is necessary. This is an active learning class. Basic lecture style classes are followed by seminars in which students explain about English papers.",
+  "notes": "履修者全員が最低1回は英語論文の紹介を行うこととする。翻訳サイト等を活用しても構わないが、意味の通らないところについては辞書を引くなどして十分に読みこなしておくことが必要である。 Every student must make a presentation about English paper at least once. Preparation is required.",
+  "preparation": "指定した論文については、発表者以外の受講者も一通り目を通しておくこと(120分)。これにより講義形式の復習とゼミ形式の予習とを兼ねることができる。各回の授業資料についても、授業前および授業後にしっかり内容を確認しておく(120分)。 All students should read the papers given to the class (120min). It can be a good wrap-up of the lecture and a good preparation of the seminar. It is also required to look over the lecture slides (120min).",
+  "evaluation": "ゼミ形式での発表および討論を50%、最終レポートを50%として100点満点で評価する。60点以上が合格である。発表については授業時間内にフィードバックを行う。 Seminar presentation and discussion (50%) and the final report (50%) are summed up to 100pts. At least 60pts are needed to pass the class.",
+  "textbook": "文献をその都度指示する。 Papers are given in the class.",
+  "referenceMaterials": "相川、大淵「音声音響インタフェース実践」、コロナ社 武田、高島「音源分離・音声認識」、コロナ社 There is no specific English textbook for this class.",
+  "schedulePlan": "第1回：講義概要・データ収集(音響環境、話者性、ラベリング) 第2回：特徴抽出(ケプストラム分析、韻律特徴、正規化) 第3回：決定木と音声合成(韻律推定、波形重畳) 第4回：線形判別分析と音響分類(音声区間検出、特徴量選択) 第5回：混合ガウス分布と話者認識(UBM、特定話者モデル) 第6回：ディープラーニングと音声認識(隠れマルコフモデル、過学習) 第7回：まとめ(その他の機械学習手法、アンサンブル学習) 1. class outline / data collection (audio environment, speakers, labeling) 2. feature extraction (cepstrum analysis, prosodic feature, normalization) 3. decision tree and text-to-speech (prosody estimation, concatenative tts) 4. linear discriminant analysis and audio classification (VAD, feature selection) 5. Gaussian mixture model and speaker recognition (UBM, speaker dependent model) 6. deep learning and speech recognition (hidden Markov model, overfitting) 7. wrap-up (other machine learning methods, ensemble training)"
+}

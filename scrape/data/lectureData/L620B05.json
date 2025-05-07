@@ -1,0 +1,37 @@
+{
+  "subjectName": "Integrated English III[5]BS電電応化",
+  "instructors": [
+    "キャンベル，Ａ(教養学環)"
+  ],
+  "courseCategory": "教養教育科目",
+  "courseType": "演習科目",
+  "timetableCode": "L620B05",
+  "semester": "2025年度 前期",
+  "schedule": [
+    {
+      "day": "月",
+      "period": 1
+    }
+  ],
+  "department": [
+    "応用生物学部応用生物学科",
+    "工学部電気電子工学科",
+    "工学部応用化学科"
+  ],
+  "grade": [
+    3,
+    4
+  ],
+  "credits": 1,
+  "classroom": "片柳研究所Ｅ１０１",
+  "lastUpdated": "2025/01/20",
+  "overview": "英語の総合的な実践的運用能力をさらに向上させることを目指す。Integrated English I・IIと同様に、学生の興味・関心や進路に即した内容を扱うが、より専門性や時事性の高い英語の学びを通じて、ディスカッションやプレゼンテーションを含む4技能のスキルアップ、論理的思考力や分析力の向上をめざす。将来のキャリアにおける英語使用、大学院進学に対応した英語学習など、将来、自発的に英語を学習できるような方法論と動機付けも与える。 The theme of this course is Film, particularly focusing on the history of movies from 1896-1927, plus famous movies, film stars and directors. The aim is for students to reach a level equivalent to a score of 400-500 in the TOEIC test. Students are asked to continue this course in the second semester.",
+  "objectives": "１．語彙力を強化する。 ２．具体的な事象に関して自らの考えを加えながら説明できる。 ３．批評的思考（クリティカルシンキング）によって、分析・評価ができる。 ４．グローバル時代に必要な国際的な教養を身につける。",
+  "teachingMethod": "The course aims to build students' knowledge of vocabulary through reading a variety of texts. Listening skills are developed through watching online video clips. Students are expected to participate actively, for example, by taking part in pair work or group discussion, and by asking questions. Computers (plus headphones / earphones) are required in every lesson.",
+  "notes": "Use a good dictionary. Please take notes during the class. Participate actively by taking part in all activities, and by asking questions when you do not understand something. Please make sure to arrive in the classroom before the lesson starts.",
+  "preparation": "Students are expected to do about 20 minutes preparation for the weekly lesson, and about 30 minutes review of the materials after the class, including storage of new vocabulary items in Quizlet.",
+  "evaluation": "「授業参加姿勢 (30%)」「課題点 (30％)」「到達度チェック (40％)」を総合的に評価する。合格点は60％とする。 授業参加姿勢とは、積極的な発言、質問、グループワークやペアワーク等授業内活動に取り組む姿勢や予習・復習状況確認のために実施する小テストの結果に関する評価を含む。 課題に関するフィードバックは、口頭、オンライン掲示、または紙上のいずれかで学生に提供される。",
+  "textbook": "Digital texts and video clips are provided by the teacher.",
+  "referenceMaterials": "Relevant reference materials are provided on the course homepage.",
+  "schedulePlan": "第1回：Course Introduction 第2回：Movies are Magic! (1) 第3回：Movies are Magic! (2) 第4回：USA: First Movie Camera and Studio / Edison &amp; Dickson 第5回：France: Lumière Brothers / Georges Méliès 第6回：USA: The Language of Film / Edwin S. Porter 第7回：USA: Birth of the Feature Film / D.W. Griffith 第8回：Achievement Check 第9回：Germany: Expressionism 第10回：Soviet Union: Montage 第11回：USA: The Silent Era 第12回：USA: Breaking the Silence 第13回：Review of Early Cinema (1896-1927) 第14回：Achievement Check"
+}

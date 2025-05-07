@@ -1,0 +1,36 @@
+{
+  "subjectName": "Integrated English II[4]CS機械",
+  "instructors": [
+    "シルベスター，M(兼任講師)"
+  ],
+  "courseCategory": "実学基礎科目",
+  "courseType": "演習科目",
+  "timetableCode": "L606C04",
+  "semester": "2025年度 後期",
+  "schedule": [
+    {
+      "day": "木",
+      "period": 2
+    }
+  ],
+  "department": [
+    "コンピュータサイエンス学部コンピュータサイエンス学科",
+    "工学部機械工学科"
+  ],
+  "grade": [
+    2,
+    3,
+    4
+  ],
+  "credits": 1,
+  "classroom": "講義実験棟３０３",
+  "lastUpdated": "2025/01/21",
+  "overview": "Integrated English Iの内容をレベルアップし、より実践的な英語力の向上を目的とする。Integrated English Iと同様に、学生の興味・関心や進路に即した内容を学習することを通じて英語の4技能のスキルアップや国際的教養、ビジネス英語のさらなる修得をめざす。Culture tells us what we are as a living thing and as a human being. The purpose of this course is to explore what we are by looking at our rich and diverse culture. This course is CEFR B1/B1+ (TOEIC 500-600).",
+  "objectives": "１．語彙力を強化する。 ２．具体的な事象に関して自らの考えを加えながら説明できる。 ３．批評的思考（クリティカルシンキング）によって、分析・評価ができる。 ４．グローバル時代に必要な国際的な教養力を身につける。",
+  "teachingMethod": "The activities we do are to increase information awareness, recognition, and to develop confidence and skill at expressing ideas. This can be through working individually and together, participation being an important element of the course.",
+  "notes": "Lesson material and activities are through online sites (Google Classroom and Moodle), so you will need your computer for each lesson (earphones will also be needed). It is recommended that you take this course in the first AND second term. The two halves of this course have the same syllabus but the lesson contents are different.",
+  "preparation": "Lesson material will be available before the lesson. Look at the material before the lesson (preferably giving yourself an hour of time to think about the lesson themes and topics). A readiness to ask questions will be important, to show you are considering the theme and topics as one whole thing. Assignments and final activities in the lessons are connected to considering both theme and topics.",
+  "evaluation": "「授業参加姿勢 (30%)」「課題点 (30％)」「到達度チェック (40％)」を総合的に評価する。合格点は60％とする。 授業参加姿勢とは、積極的な発言、質問、グループワークやペアワーク等授業内活動に取り組む姿勢や予習・復習状況確認のために実施する小テストの結果に関する評価を含む。 課題に対するフィードバックは授業時間内、あるいはMoodleなどを通じて随時行う。",
+  "textbook": "There is no textbook for this course. All material will be provided.",
+  "schedulePlan": "第1回：Re-Introduction : What is Culture? 第2回：Culture that Connects Us 第3回：Culture that Connects Us 第4回：Assignment 1 第5回：Culture In and Around Us 第6回：Culture In and Around Us 第7回：Culture In and Around Us 第8回：Assignment 2 第9回：Culture the Inventor 第10回：Culture the Inventor 第11回：Culture the Inventor 第12回：Assignment 3 第13回：Culture on the Move 第14回：Culture on the Move"
+}

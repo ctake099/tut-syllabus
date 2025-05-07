@@ -1,0 +1,35 @@
+{
+  "subjectName": "Interaction Design",
+  "instructors": [
+    "太田高志(メディア学部メディア学科)"
+  ],
+  "courseCategory": "専門科目",
+  "courseType": "講義科目",
+  "timetableCode": "GGM81801",
+  "semester": "2025年度 前期",
+  "schedule": [
+    {
+      "day": "月",
+      "period": 4
+    }
+  ],
+  "department": [
+    "バイオ・情報メディア研究科博士前期課程メディアサイエンス専攻"
+  ],
+  "grade": [
+    1,
+    2
+  ],
+  "credits": 1,
+  "classroom": "講義実験棟２０３",
+  "lastUpdated": "2025/03/13",
+  "overview": "Digital applications have become indispensable elements of modern life, and the importance of designing good usability for these functions has grown accordingly. However, providing an easily understandable UI alone is not sufficient. Focusing on UX has become a crucial aspect of creating successful applications. The use of digital functions involves interactions between the system and the user. Therefore, designing better interactions is essential to achieving a good UX. This course explores what it means to design interactions for digital functions. We will discuss the difference between simply providing functionality and designing with UX in mind, and further expand the discussion to analyze various objects and situations.",
+  "objectives": "Through this course, students are expected to gain the following insights: 1. The changes digital functions have brought to our daily lives 2. The difference between merely providing a function and designing a good UX 3. An understanding of interaction design By acquiring these insights, students will ideally develop the ability to critically analyze various objects and occurrences from the perspective of interaction design.",
+  "teachingMethod": "The class is conducted in seminar style, with explanations followed by questions and discussion. Students are required to bring their own laptop computers to the presentations of their own assignments.",
+  "notes": "This class is part of the English program and is conducted entirely in English. Students are expected to participate in discussions in English as well. Japanese students may enroll in this course if they are able to meet this requirement.",
+  "preparation": "Students are given a research assignment on a specific topic each time. They are required to prepare slides so that they can present their findings in the form of a presentation (about 120 min. for preparation).",
+  "evaluation": "The grade will be based on the quality of the student's work on the assignment (50%: slide quality and content of presentation) and the quality of the student's participation in class discussions (50%). A score of 60 or above is considered passing. Feedback on the assignment will be given in class after the students have presented their work.",
+  "textbook": "no textbook is specified.",
+  "referenceMaterials": "＊ The design of everyday things, Don Norman ＊ Emotional Design, Don Norman ＊ The design of future things, Don Norman ＊ Interaction Design, Rogers, Sharp, and Preece",
+  "schedulePlan": "第1回：History of Computer and Human 第2回：UI Design 第3回：Interaction and UX Design 第4回：Functionality and Interaction 第5回：Creation of Experience 第6回：Ambient, Ubiquitous, Slow Computing 第7回：Future Vision"
+}

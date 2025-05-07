@@ -1,0 +1,34 @@
+{
+  "subjectName": "Advanced Theories in Educational Media",
+  "instructors": [
+    "飯沼瑞穂(メディア学部メディア学科)"
+  ],
+  "courseCategory": "専門科目",
+  "courseType": "講義科目",
+  "timetableCode": "GGM82301",
+  "semester": "2025年度 前期",
+  "schedule": [
+    {
+      "day": "水",
+      "period": 2
+    }
+  ],
+  "department": [
+    "バイオ・情報メディア研究科博士前期課程メディアサイエンス専攻"
+  ],
+  "grade": [
+    1,
+    2
+  ],
+  "credits": 1,
+  "classroom": "片柳研究所Ｃ１００４",
+  "lastUpdated": "2025/03/13",
+  "overview": "This course overviews the predominant theories that influenced the filed of educational media studies. Educational media is a term used to describe any modes of communication used in learning and teaching from digital storybooks to computers. The course will cover such as social constructivism and instructional design. We will also look into new developments in educational media such as serious games, VR and AI, questioning how these new tools will shape the future of educational media. Finally, we will investigate how these ideas can shape the design of our society.",
+  "objectives": "The objective of the course is to identify and understand theories in educational media studies",
+  "teachingMethod": "the class will consist of short lecture, discussion of the reading materials and presentations by the students. Please bring your laptop PC to class",
+  "notes": "lecture, discussion, reading and writing will be in English",
+  "preparation": "Please do all the readings in advance before you attend your class. Preparation and going over the materials takes about 120 minutes per week.",
+  "evaluation": "40% class assignments 30% class discussions 30% final presentation feedback will be given in oral forms in class",
+  "textbook": "M. Iinuma (2016)Learning and Teaching with Technology in the Knowledge Society New Literacy, Collaboration and Digital Content, Springer-Verlag https://link.springer.com/book/10.1007/978-981-10-0144-4",
+  "schedulePlan": "１：Overview of Educational Media 1.（development of media technology and its application to education） ２：Overview of Educational Media 2.（Information Literacy, 21st Century Skills, Digital Divide） ３：Learning theories and Educational Media（Social Constructivism，Zone of Proximal Development，CSCL） ４：Instructional Design（Student centered approach to teaching，ADDIE&nbsp;&nbsp;Model） ５：New Development in Educational Media1（GBS Theory，Gaming and education，Serious Game） ６：New Development in Educational Media 2（VR and Education，AI and Education、Social Design） ７：Student Presentation"
+}

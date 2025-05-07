@@ -1,0 +1,36 @@
+{
+  "subjectName": "Integrated English III[A3]MS",
+  "instructors": [
+    "アシュウィン",
+    "Ｃ(兼任講師)"
+  ],
+  "courseCategory": "教養教育科目",
+  "courseType": "演習科目",
+  "timetableCode": "L620M03",
+  "semester": "2025年度 前期",
+  "schedule": [
+    {
+      "day": "水",
+      "period": 1
+    }
+  ],
+  "department": [
+    "メディア学部メディア学科"
+  ],
+  "grade": [
+    3,
+    4
+  ],
+  "credits": 1,
+  "classroom": "講義棟Ａ３０４",
+  "lastUpdated": "2025/01/23",
+  "overview": "英語の総合的な実践的運用能力をさらに向上させることを目指す。Integrated English I・IIと同様に、学生の興味・関心や進路に即した内容を扱うが、より専門性や時事性の高い英語の学びを通じて、ディスカッションやプレゼンテーションを含む4技能のスキルアップ、論理的思考力や分析力の向上をめざす。将来のキャリアにおける英語使用、大学院進学に対応した英語学習など、将来、自発的に英語を学習できるような方法論と動機付けも与える。 The theme of this course is Music, and the aim is for students to reach a level equivalent to 500-600 in the TOEIC test. Students are encouraged to take this course in both the first and second semester.",
+  "objectives": "１．語彙力を強化する。 ２．具体的、抽象的な事柄に関して自らの考えを論理的に組み立て、述べたり書いたりできる。 ３．批評的思考（クリティカルシンキング）によって、分析・評価ができる。 ４．グローバル時代に必要な国際的な教養力を身につける。",
+  "teachingMethod": "This course is designed to improve each student's English language skills through applying active learning to the study of music. Each week will include study of an artist and song from different music genres. Students will gain confidence in listening to English as well as using English in class to discuss the topic of music during groupwork. Students will also gain increased knowledge of foreign culture through the study of music. During the course students will be given opportunities to improve their listening skills, build vocabulary, actively practice their spoken English in groups and give a short presentation in English in class. Students will be required to use their PCs in every class.",
+  "notes": "Classes will be taught in English. If possible, Japanese will not be spoken. Also, bring your computer to every class.",
+  "preparation": "Students should be prepared to review, prepare, practice, and do research and homework at home. Preparation (about 20 minutes reading and study of vocabulary), review and homework (about 20 minutes) and research (about 20 minutes). A very basic level of computer skills will be required.",
+  "evaluation": "「授業参加姿勢 (30%)」「課題点 (30％)」「到達度チェック (40％)」を総合的に評価する。合格点は60％とする。 授業参加姿勢とは、積極的な発言、質問、グループワークやペアワーク等授業内活動に取り組む姿勢や予習・復習状況確認のために実施する小テストの結果に関する評価を含む。 課題に対するフィードバックは授業時間内、あるいはMoodleなどを通じて随時行う。",
+  "textbook": "No textbook.",
+  "referenceMaterials": "To be given by Moodle each week.",
+  "schedulePlan": "第1回：Orientation and Course information 第2回：Music Artist: Taylor Swift / Speaking about favorite artists 第3回：Music Artist: Music Artist: Green Day / Speaking about music genres 第4回：Music Artist: Michael Jackson / Speaking about videos and concerts 第5回：Music Artist: Ed Sheeran / Speaking about musical instruments 第6回：Music Artist: The Beatles / Presentation Information 第7回：Mid-term Achievement Check / Presentation Preparation 第8回：Music Artist: Abba / Presentation Practice 第9回：Music Artist: Metallica / Presentations 第10回：Music Artist: Miley Cyrus / Presentations 第11回：Music Artist: Bob Marley / Presentations 第12回：Music Artist: Queen / Presentations 第13回：Final Achievement Check / Presentations 第14回：Feedback"
+}

@@ -1,0 +1,37 @@
+{
+  "subjectName": "Integrated English IV[5]BS電電応化",
+  "instructors": [
+    "キャンベル，Ａ(教養学環)"
+  ],
+  "courseCategory": "教養教育科目",
+  "courseType": "演習科目",
+  "timetableCode": "L621B05",
+  "semester": "2025年度 後期",
+  "schedule": [
+    {
+      "day": "月",
+      "period": 1
+    }
+  ],
+  "department": [
+    "応用生物学部応用生物学科",
+    "工学部電気電子工学科",
+    "工学部応用化学科"
+  ],
+  "grade": [
+    3,
+    4
+  ],
+  "credits": 1,
+  "classroom": "片柳研究所Ｅ１０１",
+  "lastUpdated": "2025/01/19",
+  "overview": "授業形態はIntegrated English Ⅲに準じるが、内容はより程度を高めたものになり、ビジネスや大学院での学びなど実践を想定したより高度な運用能力の習得や、世界の様々な社会と文化をより深く理解するための知識の習得を目指す。また、将来、自発的に英語が学習できるような方法論と動機づけも与える。 The theme of this course is Film, particularly focusing on the history of movies from 1928 to the present, plus famous movies, film stars and directors. The aim is for students to reach a level equivalent to a score of 400-500 in the TOEIC test.",
+  "objectives": "１．語彙力を強化する。 ２．具体的、抽象的な事柄に関して自らの考えを論理的に組み立て、述べたり書いたりできる。 ３．批評的思考（クリティカルシンキング）によって、分析・評価ができる。 ４．グローバル時代に必要な国際的な教養力を身につける。",
+  "teachingMethod": "The course aims to build students' knowledge of vocabulary through reading a variety of texts. Listening skills are developed through watching online video clips. Students are expected to participate actively, for example, by taking part in pair work or group discussion, and by asking questions. Computers (plus headphones / earphones) are required in every lesson.",
+  "notes": "Use a good dictionary. Please take notes during the class. Participate actively by taking part in all activities, and by asking questions when you do not understand something. Please make sure to arrive in the classroom before the lesson starts.",
+  "preparation": "Students are expected to do about 20 minutes preparation for the weekly lesson, and about 30 minutes review of the materials after the class, including storage of new vocabulary items in Quizlet.",
+  "evaluation": "「授業参加姿勢 (30%)」「課題点 (30％)」「到達度チェック (40％)」を総合的に評価する。合格点は60％とする。 授業参加姿勢とは、積極的な発言、質問、グループワークやペアワーク等授業内活動に取り組む姿勢や予習・復習状況確認のために実施する小テストの結果に関する評価を含む。 課題に関するフィードバックは、口頭、オンライン掲示、または紙上のいずれかで学生に提供される。",
+  "textbook": "Digital texts and video clips are provided by the teacher.",
+  "referenceMaterials": "Relevant reference materials are provided on the course homepage.",
+  "schedulePlan": "第1回：Course Introduction 第2回：USA: The Golden Age of Cinema (1) 第3回：USA: The Golden Age of Cinema (2) 第4回：USA: The Golden Age of Cinema (3) 第5回：France/Italy/USA: Independent Cinema (1) 第6回：France/Italy/USA: Independent Cinema (2) 第7回：Home Video Technology 第8回：Achievement Check 第9回：The Cinema of Japan (1) 第10回：The Cinema of Japan (2) 第11回：The Cinema of Other Countries 第12回：Experimental Films 第13回：Documentary Films 第14回：Achievement Check"
+}

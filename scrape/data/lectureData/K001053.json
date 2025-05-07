@@ -1,0 +1,39 @@
+{
+  "subjectName": "工学英語A[4Q1][機]",
+  "instructors": [
+    "シルベスター，M(兼任講師)"
+  ],
+  "courseCategory": "専門教育科目",
+  "courseType": "演習科目",
+  "timetableCode": "K001053",
+  "semester": "2025年度 後期",
+  "schedule": [
+    {
+      "day": "月",
+      "period": 2
+    },
+    {
+      "day": "金",
+      "period": 3
+    }
+  ],
+  "department": [
+    "工学部機械工学科"
+  ],
+  "grade": [
+    2,
+    3,
+    4
+  ],
+  "credits": 1,
+  "classroom": "講義実験棟１０１ , 講義実験棟１０２",
+  "lastUpdated": "2024/12/22",
+  "overview": "This course is a practical introduction to the language you will need if you get a job as an engineer and will be required to use English at work. It presents English from a wide variety of engineering fields and situations, develops communication skills, covers essential grammar, and provides background in major engineering concepts.",
+  "objectives": "The aim in this course is to aid the development of professional skills based on practical learning. Students will improve their speaking, listening and reading skills, and gain confidence in presenting ideas in English. While improving their speaking, listening and reading skills, students will be able to communicate in work situations with both foreign and domestic engineers, and will be able to present their ideas in English. [International Education, Professional skills based on practical learning, Communication Skills]",
+  "teachingMethod": "Students will engage in a wide range of engineering-related speaking, listening and reading activities, and practice giving explanations of processes to fellow students. The classes will be conducted in English, and students are expected to use only English in class.",
+  "notes": "Students should have passed the four compulsory first-year English courses: English SL I and II, and English RW I and II.",
+  "preparation": "Students will be asked to preview the vocabulary for the following unit, and review expressions and structures covered in the current lesson.&nbsp;&nbsp;There will be regular homework.",
+  "evaluation": "Participation (35%); Assignments (35%); final presentations (30%).",
+  "textbook": "Bonamy, David; Technical English 1 (second edition ) Pearson; ISBN 978-1-292-42446-0",
+  "schedulePlan": "第1回：Orientation 第2回：Unit 2: Parts (1) 第3回：Unit 4: Movement 第4回：Presentation explanation- Assignment 1 第5回：Unit 5: Flow 第6回：Unit 6: Materials 第7回：Unit 7: Specifications 第8回：Assignment 2 第9回：Unit 9: Troubleshooting 第10回：Unit 11: Cause and effect 第11回：Presentations 第12回：Presentations 第13回：Presentations 第14回：Assignment 3"
+}

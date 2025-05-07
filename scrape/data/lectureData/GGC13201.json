@@ -1,0 +1,35 @@
+{
+  "subjectName": "人間動作解析特論",
+  "instructors": [
+    "武博(コンピュータサイエンス学部コンピュータサイエンス学科)"
+  ],
+  "courseCategory": "専門科目",
+  "courseType": "講義科目",
+  "timetableCode": "GGC13201",
+  "semester": "2025年度 前期",
+  "schedule": [
+    {
+      "day": "月",
+      "period": 2
+    }
+  ],
+  "department": [
+    "バイオ・情報メディア研究科博士前期課程コンピュータサイエンス専攻"
+  ],
+  "grade": [
+    1,
+    2
+  ],
+  "credits": 1,
+  "classroom": "片柳研究所Ｅ２０１",
+  "lastUpdated": "2024/12/18",
+  "overview": "人間情報学は、人間が発信するあらゆる情報に関して、分野を超えて広範囲に統合することにより、人間社会の向上と人類の幸福に貢献することを目標とする学際的な研究領域である。この分野では、ヒトの身体動作、視線を始め、人間が発信する情報を多面的に解明する学際的研究が行われている。 本講義では、人間情報学の基本から応用までを学び（分析・評価能力）、講義・演習・発表を通して実際に人間情報学、特に「人間動作解析」分野に関する研究のプロセスをを学ぶ（コミュニケーション能力、実学に基づく専門能力）ことを目的とする。 モーションキャプチャー、アイトラッカーなど具体的なIoTセンサーの原理と操作方法を理解し、実際操作することで、生活のなかにある人間情報学に関する問題の発見及び自ら研究の内容と実験を設計・実施・評価できるようになることを目指す（分析・評価能力、論理的な思考力、問題解決力）。 ----------- Human informatics is an interdisciplinary research field that aims to contribute to the improvement of human society and the well-being of humankind by integrating a wide range of information transmitted by humans across disciplines. The purpose of this course is to learn the basics and applications of human informatics, and to actually learn the process of research in the field of human informatics, especially “human behavior analysis” through lectures, exercises, and presentations.",
+  "objectives": "本講義を通し、ヒトの身体動作、視線運動に関した実験の設計・実施法、データ解析法を習得するとともに、実際にIoTデバイスを操作し、実験を実施できることを目指す。あらゆるセンサーを利用し、自ら人間情報学に関する研究の内容と実験を設計・実施・評価できるようになることを目指す。 ----------- Through this course, students will learn how to design and conduct experiments related to human body movements and eye movements, and how to analyze data, as well as to actually operate IoT devices and conduct experiments. The goal is for students to be able to design, conduct, and evaluate their own research and experiments related to human informatics by using all kinds of sensors.",
+  "teachingMethod": "パワーポイントの講義資料を用いて講義する。講義資料はMoodleから入手できるようにする。 3名程度の班単位で実験（グループワーク）を行う。講義と並びに、学生が登壇するミニ発表会を実施し、学生自らの主体的な学び(アクティブラーニング)を促す。 実験の内容と疑問に関する発表を行うため、必ずノートPCを持参すること。 ----------- This course will using PowerPoint. Related materials will be made available via Moodle. Experiments (group work) will be conducted in groups of about 3 students. A mini-presentation session will be held along with the lecture to encourage independent learning (active learning) by the students. Students are required to bring their own notebook PCs in order to make presentations on the content and questions of the experiments.",
+  "notes": "出席とレポートの提出は必須である。講義の内容をよく理解して実験に取り組むこと。 ----------- Attendance and submission of reports are mandatory. Students are expected to understand the content of the lectures well before conducting experiments.",
+  "preparation": "事前に公開した資料を予習しておくこと，授業後にはレポートを提出すること（100分程度）。時間内に終わらなかった課題がある場合には、次の週までに終わらせておくこと。 ----------- Students are required to prepare for the material released in advance and submit a report after class (about 100 minutes). If there are assignments that were not completed in time, they should be finished by the next week.",
+  "evaluation": "毎回の演習の発表40%、最終レポート40%、実験への取り組み方20%を考慮して総合的に評価する。 毎回の発表に対するフィードバックを行う。 ----------- The overall evaluation will take into account 40% of the presentation of each exercise, 40% of the final report, and 20% of the effort to conduct the experiment. Feedback on each presentation will be given.",
+  "textbook": "指定しない、講義資料をMoodleにて配布する． ----------- Unspecified, lecture materials will be distributed via Moodle.",
+  "referenceMaterials": "板生 清: 人間情報学、近代科学社Digital(2021/12/24)、ISBN-10:476496029X",
+  "schedulePlan": "第1回：人間情報学とは 第2回：センサー、テクノロジー、人間中心の研究開発 第3回：研究プロジェクト例１・演習（アイトラッカー） 第4回：研究プロジェクト例２・演習（モーションキャプチャー） 第5回：人間動作解析（人間行動に関するデータの処理と注意事項） 第6回：グループプロジェクト（自由課題） 第7回：展望・最終発表・最終レポート ----------- Session 1: What is Human Informatics? Session 2: Sensors, Technology, and Human-Centered R&amp;D Session 3: Research Project 1: Exercise (Eye Tracker) Session 4: Research Project 2: Exercise (Motion Capture) Session 5: Human behavior analysis (data processing and precautions for human behavior) Session 6: Group projects (free assignment) Session 7: Final presentation, final report"
+}

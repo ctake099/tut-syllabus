@@ -1,0 +1,38 @@
+{
+  "subjectName": "Integrated English II[1]BS電電応化",
+  "instructors": [
+    "清水友子(兼任講師)"
+  ],
+  "courseCategory": "実学基礎科目",
+  "courseType": "演習科目",
+  "timetableCode": "L606B01",
+  "semester": "2025年度 後期",
+  "schedule": [
+    {
+      "day": "月",
+      "period": 2
+    }
+  ],
+  "department": [
+    "応用生物学部応用生物学科",
+    "工学部電気電子工学科",
+    "工学部応用化学科"
+  ],
+  "grade": [
+    2,
+    3,
+    4
+  ],
+  "credits": 1,
+  "classroom": "講義実験棟３０４",
+  "lastUpdated": "2025/01/24",
+  "overview": "Integrated English Iの内容をレベルアップし、より実践的な英語力の向上を目的とする。Integrated English Iと同様に、学生の興味・関心や進路に即した内容を学習することを通じて英語の4技能のスキルアップや国際的教養、ビジネス英語のさらなる修得をめざす。 この授業では、SDGs (Sustainable Develpment Goals)の様々なトピックについて、読み、考え、話し合いながら、英語を使う力をつけ、思考力を伸ばすことを目標とする。また、SDGsで取り上げられている世界の様々な問題への理解を深める機会にもなる。英語力として、TOEIC500点以上の到達を目指す。",
+  "objectives": "１．語彙力を強化する。 ２．具体的な事象に関して自らの考えを加えながら説明できる。 ３．批評的思考（クリティカルシンキング）によって、分析・評価ができる。 ４．グローバル時代に必要な国際的な教養力を身につける。",
+  "teachingMethod": "基本的に、SDGsに関する教科書に沿って、毎回１章学習する。進め方は次の通り： １）Vocabulary check&nbsp;&nbsp;2) Reading &amp; 内容理解問題 3) Listening or&nbsp;&nbsp;Discussion&nbsp;&nbsp;ペアやグループワークでのアクティビティが多いアクティブラーニング式の授業となる。各トピックのDiscussion Questionに英語で自分の考えをまとめて、3章ごとに、Google Classroomから提出（Feedback返却）。また学期末に、Final Projectとして、各自が興味のあるSDGsのトピックに関するミニ発表の機会あり（この際、PC持参必要）。",
+  "notes": "教科書持参は必須。知らない単語を調べるため、辞書も持参のこと。",
+  "preparation": "予習課題： 各章のVocabulary問題に解答(20-30分） 復習課題： 授業後にReflection Paper(振り返り）を書き、3課ごとにGoogle Classroomに提出(約20分)",
+  "evaluation": "「授業参加姿勢 (30%)」「課題点 (30％)」「到達度チェック (40％)」を総合的に評価する。合格点は60％とする。 授業参加姿勢とは、積極的な発言、質問、グループワークやペアワーク等授業内活動に取り組む姿勢や予習・復習状況確認のために実施する小テストの結果に関する評価を含む。 課題に対するフィードバックは授業時間内、あるいはMoodleなどを通じて随時行う。",
+  "textbook": "Adam Murray, Anderson Passos著; Our World Tomorrow - How technology will change our lives 英語で学ぶ地球の未来とSDGs; 南雲堂; ISBN 978-4-523-17961-0; 2750円",
+  "referenceMaterials": "特になし 適宜ハンドアウト配布",
+  "schedulePlan": "第１回 Introduction 第２回 Unit 1: Introduction 第３回&nbsp;&nbsp;Unit 2: Good Health 第４回 Unit 3: Breaking the Poverty Cycle 第５回 Unit 4: Clean Water 第６回 Unit 6: Zero Hunger 第７回&nbsp;&nbsp;Unit 7: Sustainable Infrastructure 第８回 Unit 8: Clean Energy 第９回 Unit 9: Remote Work 第１０回 Unit 11: Quality Education for All 第１１回 Unit 12: Reducing Inequalities 第１２回 Final Project: Preparation 第１３回 Final Project: Presentation 第１４回 到達度確認チェック・まとめ"
+}

@@ -1,0 +1,35 @@
+{
+  "subjectName": "衛生学特論",
+  "instructors": [
+    "後藤早希(応用生物学部応用生物学科)"
+  ],
+  "courseCategory": "専門科目",
+  "courseType": "講義科目",
+  "timetableCode": "GGB13301",
+  "semester": "2025年度 後期",
+  "schedule": [
+    {
+      "day": "金",
+      "period": 2
+    }
+  ],
+  "department": [
+    "バイオ・情報メディア研究科博士前期課程バイオニクス専攻"
+  ],
+  "grade": [
+    1,
+    2
+  ],
+  "credits": 1,
+  "classroom": "片柳研究所Ｅ３０２",
+  "lastUpdated": "2025/01/06",
+  "overview": "衛生とは「生」を「まもる」ことであり、食品衛生、公衆衛生、環境衛生などの活動がある。医療・医薬品、食品、化粧品、環境分野における専門家として、生命や生活をまもるために必要な衛生を管理し、さらに社会において教育・指導することが求められる。本講義では、衛生に関する微生物や化学物質、健康に悪影響を及ぼすリスク、個人や社会における衛生管理について解説する。また、過去の事例を挙げて、衛生に関する問題点やその改善についても学ぶ。 The concept of hygiene encompasses the protection of life, encompassing domains such as food hygiene, public health, and environmental hygiene. As experts in the fields of medicine, pharmaceuticals, food, cosmetics and the environment, they are required to manage hygiene necessary to protect life and living, and to educate and guide society.This lecture will elucidate the nature of microorganisms and chemicals related to hygiene, the risks they pose to health, and hygiene management in individuals and society. Furthermore, the lecture will examine past cases to illuminate the challenges associated with hygiene and the potential for enhancement.",
+  "objectives": "食品、保健、環境に関する衛生の基礎的な知識の理解を深め、衛生学についての実学に基づく専門力をつけることを目的とする。また、衛生に関する実例から、理論的な応用力や衛生の問題解決力を身につけることを到達目標とする。 The objective of this lecture is twofold: firstly, to enhance comprehension of fundamental hygiene principles associated with food, health, and the environment; and secondly, to cultivate specialised competencies through empirical hygiene research. Furthermore, the objective of this lecture is to acquire theoretical application skills and the ability to solve hygiene problems through practical examples related to hygiene.",
+  "teachingMethod": "主にパワーポイントを用いて講義するが、指名して意見を述べてもらうアクティブラーニングの形式をとる。授業の一部は、衛生の課題に対して少人数でディスカッションし、意見をまとめ、発表するグループワークを行ってもらう。また、講義の終わりにはレポートを作成する。履修人数が多数となった際には、授業内で試験も実施する場合もある。ノートPCを持参する必要はないが、課題の提出は、Moodleを使用する。 The lecture will be taught mainly using PowerPoint, but will also take the form of active learning, in which students will be asked to give their opinions when called upon. Part of the course will involve small-group discussions on issues related to health, and students will be asked to summarise their opinions and make presentations. Students will also be asked to write reports at the end of the course. If there are a large number of students enrolled, there may be an in-class test. Students do not need to bring their own laptop, but will be asked to submit their assignments using Moodle.",
+  "notes": "特に、前もって履修しておくべき科目は指定しないが、食品や微生物、環境問題に関心を持っていること、また、その基礎知識を理解していることが望ましい。 While there is no stipulation regarding prerequisite subjects, it is recommended that students possess a keen interest in food, microorganisms and environmental issues, and have a fundamental understanding of these subjects.",
+  "preparation": "事前に講義資料をMoodleにアップロードするので、確認すること（60分程度）。最終講義後に最終レポートを提出してもらうので、各講義を理解するために授業の復習を行うこと（100分程度）。 The lecture materials will be uploaded to Moodle in advance, and it is imperative that these are reviewed (approximately 60 minutes). Following the final lecture, a final report will be requested, and as such, it is advisable to review the lessons to ensure full comprehension of the material (approximately 100 minutes).",
+  "evaluation": "出席を前提とし、講義中の発表および小レポート（50%）と最終レポート（50%）で評価する。提出されたレポートについては講義中またはMoodleを通じてフィードバックを行う。 Attendance is mandatory, and the course will be assessed based on presentations and short reports during the lectures (50%) and a final report (50%). Feedback on submitted reports will be provided during the lectures or via Moodle.",
+  "textbook": "指定しない Not specified.",
+  "referenceMaterials": "安達修一 編，落合裕隆ら 著，公衆衛生学 ―社会・環境と健康―，三共出版, 2023 田﨑達明 編, 栄養科学イラストレイテッド 食品衛生学 第3版, 羊土社, 2024 Kamboj, S., Gupta, N., Bandral, J. D., Gandotra, G., and Anjum, N. Food safety and hygiene: A review. International Journal of Chemical Studies, 2020, 8(2), 358-368. DOI:10.22271/chemi.2020.v8.i2f.8794 その他、参考文献は講義中に提示する。",
+  "schedulePlan": "第1回：衛生学の基本的な考え方 第2回：食品衛生に関連する微生物 第3回：食品衛生に関連する化学物質 第4回：器具および容器包装に関する衛生 第5回：衛生の管理方法 第6回：公衆衛生と健康増進 第7回：環境問題と衛生 Lesson 1: Fundamentals of Hygiene Lesson 2: Microorganisms in Relation to Food Hygiene Lesson 3: Chemical Substances in Relation to Food Hygiene Lesson 4: Hygiene in Relation to Equipment, Containers and Packaging Lesson 5: Methods of Hygiene Management Lesson 6: Public Health and Health Promotion Lesson 7: Environmental Issues and Hygiene"
+}
