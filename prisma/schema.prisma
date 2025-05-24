@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Lecture {
+  id                 Int           @id @default(autoincrement())
+  subjectName        String
+  courseCategory     String
+  courseType         String
+  timeTableCode      String
+  semester           String
+  credits            Int
+  classroom          String?
+  lastUpdated         String?
+
+  overview           String?
+  objectives         String?
+  learningOutcomes   String?
+  teachingMethod     String?
+  notes              String?
+  preparation        String?
+  evaluation         String?
+  textbook           String?
+  referenceMaterials String?
+  schedulePlan       String?
+
+  instructors        Instructor[]  @relation("LectureInstructors")
+  departments        Department[]  @relation("LectureDepartments")
+  grades             Grade[]       @relation("LectureGrades")
+  periods            Period[]      @relation("LecturePeriods")
+}
+
+model Instructor {
+  id        Int       @id @default(autoincrement())
+  name      String    @unique
+  belongsTo String?
+  lectures  Lecture[] @relation("LectureInstructors")
+}
+
+model Department {
+  id        Int       @id @default(autoincrement())
+  name      String    @unique
+  lectures  Lecture[] @relation("LectureDepartments")
+}
+
+model Grade {
+  id        Int       @id @default(autoincrement())
+  value     Int       @unique
+  lectures  Lecture[] @relation("LectureGrades")
+}
+
+model Period {
+  id        Int       @id @default(autoincrement())
+  day       String
+  period    Int?
+  lectures  Lecture[] @relation("LecturePeriods")
+  @@unique([day, period])
+}
