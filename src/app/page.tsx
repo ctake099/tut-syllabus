@@ -43,7 +43,7 @@ export default async function Page({
   }
 
   // ⑤ where 条件
-  const where: any = {
+  const where = {
     ...(subject    && { subjectName: { contains: subject } }),
     ...(instructor && { instructors: { some: { name: { contains: instructor } } } }),
     ...(credit     !== undefined && { credits: credit }),

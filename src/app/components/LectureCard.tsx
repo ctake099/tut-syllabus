@@ -115,12 +115,3 @@ export default function LectureCard({ lecture }: LectureCardProps) {
         </>
     );
 }
-
-function InfoRow({ label, children }: { label: string; children: React.ReactNode }) {
-    return (
-        <p className="text-sm leading-6">
-            <span className="inline-block w-28 font-semibold text-gray-600">{label}</span>
-            {children || '―'}
-        </p>
-    );
-}

@@ -14,7 +14,6 @@ export default function LectureList({ initialLectures, totalCount, where }: Prop
 
   const handleLoadMore = () => {
     startTransition(async () => {
-      const parsedWhere = JSON.parse(where);
       const more = await loadMoreLectures(offset);
       setLectures((prev) => [...prev, ...more]);
       setOffset((prev) => prev + more.length);
