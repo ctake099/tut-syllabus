@@ -95,7 +95,6 @@ export default async function Page({
       <LectureList
         initialLectures={initialLectures}
         totalCount={totalCount}
-        where={JSON.stringify(where)}
       />
     </main>
   );

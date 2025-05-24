@@ -5,7 +5,7 @@ import { loadMoreLectures } from '@/actions';
 import LectureCard from './LectureCard';
 import { Props } from '@/types/lecture';
 
-export default function LectureList({ initialLectures, totalCount, where }: Props) {
+export default function LectureList({ initialLectures, totalCount}: Props) {
   const [lectures, setLectures] = useState(initialLectures);
   const [offset, setOffset] = useState(initialLectures.length);
   const [isPending, startTransition] = useTransition();

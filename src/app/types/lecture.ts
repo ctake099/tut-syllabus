@@ -86,9 +86,8 @@ export type SearchParams = {
 };
 
 export type Props = {
-  initialLectures: any[];
-  totalCount: number;
-  where: string; // JSON.stringifyされた文字列で受け取る
+  initialLectures: LectureWithRelations[];
+  totalCount: number
 };
 
 
