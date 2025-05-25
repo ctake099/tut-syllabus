@@ -35,7 +35,7 @@ export default function LectureCard({ lecture }: LectureCardProps) {
                     <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full">
                         {lecture.credits}単位
                     </span>
-                    {lecture.periods.map(p => (
+                    {lecture.periods.map((p: { id: number; day: string; period: number | null }) => (
                         <span key={p.id} className="bg-green-100 text-green-800 px-2 py-1 rounded-full">
                             {p.day}
                             {p.period ?? '―'}
