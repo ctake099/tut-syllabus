@@ -75,9 +75,9 @@ export default async function Page({
     }),
   ]);
 
-  const creditOpts = creditRaw.map(r => r.credits);
-  const gradeOpts  = gradeRaw.map(g => g.value);
-  const depOpts    = depRaw.map(d => d.name);
+  const creditOpts = creditRaw.map((r: { credits: number }) => r.credits);
+  const gradeOpts  = gradeRaw.map((g: { value: number }) => g.value);
+  const depOpts    = depRaw.map((d: { name: string }) => d.name);
 
   // ⑦ レンダリング
   return (
