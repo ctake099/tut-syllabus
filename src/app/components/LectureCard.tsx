@@ -82,7 +82,7 @@ export default function LectureCard({ lecture }: LectureCardProps) {
                         <MetaRow label="科目区分">{lecture.courseCategory}</MetaRow>
                         <MetaRow label="授業形態">{lecture.courseType}</MetaRow>
                         <MetaRow label="曜日・時限">
-                            {lecture.periods.map(p => `${p.day}${p.period ?? ''}`).join(' / ')}
+                            {lecture.periods.map((p: { day: string; period: number | null }) => `${p.day}${p.period ?? ''}`).join(' / ')}
                         </MetaRow>
                         <MetaRow label="時間割コード">
                             <TimeTableBadge code={lecture.timeTableCode} />
