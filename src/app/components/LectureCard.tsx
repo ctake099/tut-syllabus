@@ -28,7 +28,7 @@ export default function LectureCard({ lecture }: LectureCardProps) {
 
                 <p className="font-bold text-lg text-blue-700">{lecture.subjectName}</p>
                 <p className="text-sm text-gray-600">
-                    {joinOrDash(lecture.instructors.map(i => i.name))}
+                    {joinOrDash(lecture.instructors.map((i: { name: string }) => i.name))}
                 </p>
 
                 <div className="flex flex-wrap gap-2 text-xs mt-2">
@@ -65,7 +65,7 @@ export default function LectureCard({ lecture }: LectureCardProps) {
                                     {lecture.subjectName}
                                 </Dialog.Title>
                                 <p className="text-sm text-gray-500">
-                                    {joinOrDash(lecture.instructors.map(i => i.name))}
+                                    {joinOrDash(lecture.instructors.map((i: { name: string }) => i.name))}
                                 </p>
                             </div>
                             <button
@@ -89,10 +89,10 @@ export default function LectureCard({ lecture }: LectureCardProps) {
                         </MetaRow>
                         <MetaRow label="学期">{lecture.semester}</MetaRow>
                         <MetaRow label="開講元">
-                            {lecture.departments.map(d => d.name).join(' / ')}
+                            {lecture.departments.map((d: { name: string }) => d.name).join(' / ')}
                         </MetaRow>
                         <MetaRow label="対象年次">
-                            {lecture.grades.map(g => `${g.value}年`).join(' / ')}
+                            {lecture.grades.map((g: { value: number }) => `${g.value}年`).join(' / ')}
                         </MetaRow>
                         <MetaRow label="単位数">{lecture.credits}</MetaRow>
                         <MetaRow label="教室">{lecture.classroom ?? '―'}</MetaRow>
