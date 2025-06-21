@@ -1,10 +1,12 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import TextField    from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Checkbox     from '@mui/material/Checkbox';
+import Button       from '@mui/material/Button';
+import CircularProgress from '@mui/material/CircularProgress';
 import { SearchFormProps } from '@/types/lecture';
 
 
@@ -18,8 +20,28 @@ function extractGroup(label: string): string {
   return m ? m[1] : label;
 }
 
-export default function SearchForm({ creditOpts, gradeOpts, depOpts }: SearchFormProps) {
+interface SearchResults {
+  lectures: unknown[];
+  totalCount: number;
+  page: number;
+  limit: number;
+  hasMore: boolean;
+}
+
+interface SearchFormWithCallbackProps extends SearchFormProps {
+  onSearch: (results: SearchResults) => void;
+  onLoading: (loading: boolean) => void;
+}
+
+export default function SearchForm({ 
+  creditOpts, 
+  gradeOpts, 
+  depOpts, 
+  onSearch, 
+  onLoading 
+}: SearchFormWithCallbackProps) {
   const q = useSearchParams();
+  const [isLoading, setIsLoading] = useState(false);
 
   // ── 曜日＋時限 ──
   const initChecked = new Set<string>(q.getAll('period'));
@@ -50,8 +72,42 @@ export default function SearchForm({ creditOpts, gradeOpts, depOpts }: SearchFor
     [depOpts]
   );
 
+  // クライアントサイド検索実行
+  const handleSearch = useCallback(async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    setIsLoading(true);
+    onLoading(true);
+
+    try {
+      const params = new URLSearchParams();
+      
+      if (subject) params.set('subject', subject);
+      if (instructor) params.set('instructor', instructor);
+      if (creditInput) params.set('credit', creditInput);
+      if (gradeInput) params.set('grade', gradeInput);
+      if (depInput) params.set('department', depInput);
+      
+      checked.forEach(period => params.append('period', period));
+
+      const response = await fetch(`/api/search?${params.toString()}`);
+      const data = await response.json();
+      
+      if (response.ok) {
+        onSearch(data);
+      } else {
+        console.error('Search failed:', data.error);
+      }
+    } catch (error) {
+      console.error('Search error:', error);
+    } finally {
+      setIsLoading(false);
+      onLoading(false);
+    }
+  }, [subject, instructor, creditInput, gradeInput, depInput, checked, onSearch, onLoading]);
+
   return (
-    <form method="GET" action="/" className="space-y-6">
+    <form onSubmit={handleSearch} className="space-y-6">
       {/* 科目名 / 担当教員 */}
       <div className="grid gap-4 md:grid-cols-2">
         <TextField
@@ -149,12 +205,19 @@ export default function SearchForm({ creditOpts, gradeOpts, depOpts }: SearchFor
 
       {/* 検索ボタン */}
       <div className="text-right">
-        <button
+        <Button
           type="submit"
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          variant="contained"
+          disabled={isLoading}
+          startIcon={isLoading ? <CircularProgress size={16} color="inherit" /> : null}
+          sx={{ 
+            minWidth: 120,
+            backgroundColor: '#2563eb',
+            '&:hover': { backgroundColor: '#1d4ed8' }
+          }}
         >
-          検索
-        </button>
+          {isLoading ? '検索中...' : '検索'}
+        </Button>
       </div>
     </form>
   );
