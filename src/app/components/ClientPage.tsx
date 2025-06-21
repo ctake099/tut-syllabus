@@ -21,12 +21,13 @@ interface SearchResults {
   hasMore: boolean;
 }
 
+
 export default function ClientPage({ initialOptions }: ClientPageProps) {
   const [searchResults, setSearchResults] = useState<SearchResults>({
     lectures: [],
     totalCount: 0,
     page: 1,
-    limit: 50,
+    limit: 20,
     hasMore: false,
   });
   const [isLoading, setIsLoading] = useState(false);

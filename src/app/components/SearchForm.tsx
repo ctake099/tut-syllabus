@@ -89,6 +89,10 @@ export default function SearchForm({
       if (depInput) params.set('department', depInput);
       
       checked.forEach(period => params.append('period', period));
+      
+      // 最初は20件で検索
+      params.set('limit', '20');
+      params.set('page', '1');
 
       const response = await fetch(`/api/search?${params.toString()}`);
       const data = await response.json();

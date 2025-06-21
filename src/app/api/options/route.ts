@@ -1,8 +1,16 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '../../../../prisma/prisma';
+import { optionsCache } from '../../lib/cache';
 
 export async function GET() {
   try {
+    // キャッシュチェック
+    const cacheKey = 'options:all';
+    const cached = optionsCache.get(cacheKey);
+    if (cached) {
+      return NextResponse.json(cached);
+    }
+
     // 検索オプション用のデータを効率的に取得
     const [creditRaw, gradeRaw, depRaw] = await Promise.all([
       prisma.lecture.findMany({
@@ -15,20 +23,22 @@ export async function GET() {
         orderBy: { value: 'asc' },
       }),
       prisma.department.findMany({
+        distinct: ['name'],
         select: { name: true },
         orderBy: { name: 'asc' },
       }),
     ]);
 
-    const creditOpts = creditRaw.map((r) => r.credits);
-    const gradeOpts = gradeRaw.map((g) => g.value);
-    const depOpts = depRaw.map((d) => d.name);
+    const result = {
+      creditOpts: creditRaw.map((r) => r.credits),
+      gradeOpts: gradeRaw.map((g) => g.value),
+      depOpts: depRaw.map((d) => d.name),
+    };
 
-    return NextResponse.json({
-      creditOpts,
-      gradeOpts,
-      depOpts,
-    });
+    // 結果をキャッシュ（10分間）
+    optionsCache.set(cacheKey, result, 10);
+
+    return NextResponse.json(result);
 
   } catch (error) {
     console.error('Options fetch error:', error);

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '../../../../prisma/prisma';
+import { searchCache } from '../../lib/cache';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
@@ -11,13 +12,22 @@ export async function GET(request: NextRequest) {
   const department = searchParams.get('department') || '';
   const periods = searchParams.getAll('period');
   const page = parseInt(searchParams.get('page') || '1');
-  const limit = parseInt(searchParams.get('limit') || '50');
+  const limit = parseInt(searchParams.get('limit') || '20');
   
   const credit = creditStr ? Number(creditStr) : undefined;
   const grade = gradeStr ? Number(gradeStr) : undefined;
   const offset = (page - 1) * limit;
 
   try {
+    // キャッシュキーを生成
+    const cacheKey = `search:${searchParams.toString()}`;
+    
+    // キャッシュチェック
+    const cached = searchCache.get(cacheKey);
+    if (cached) {
+      return NextResponse.json(cached);
+    }
+
     // 期間条件の構築
     let periodCondition = {};
     if (periods.length > 0) {
@@ -104,13 +114,18 @@ export async function GET(request: NextRequest) {
       prisma.lecture.count({ where }),
     ]);
 
-    return NextResponse.json({
+    const result = {
       lectures,
       totalCount,
       page,
       limit,
       hasMore: offset + lectures.length < totalCount,
-    });
+    };
+
+    // 結果をキャッシュ（2分間）
+    searchCache.set(cacheKey, result, 2);
+
+    return NextResponse.json(result);
 
   } catch (error) {
     console.error('Search error:', error);
@@ -120,7 +135,7 @@ export async function GET(request: NextRequest) {
       lectures: [],
       totalCount: 0,
       page: 1,
-      limit: 50,
+      limit: 20,
       hasMore: false,
     });
   }
