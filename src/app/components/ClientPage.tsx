@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useState, useCallback } from 'react';
 import SearchForm from './SearchForm';
 import LectureList from './LectureList';
 import { LectureWithRelations } from '@/types/lecture';
@@ -15,18 +14,14 @@ interface ClientPageProps {
 }
 
 interface SearchResults {
-  lectures: LectureWithRelations[];
+  lectures: unknown[];
   totalCount: number;
   page: number;
   limit: number;
   hasMore: boolean;
 }
 
-// 検索結果のキャッシュ
-const searchCache = new Map<string, SearchResults>();
-
 export default function ClientPage({ initialOptions }: ClientPageProps) {
-  const searchParams = useSearchParams();
   const [searchResults, setSearchResults] = useState<SearchResults>({
     lectures: [],
     totalCount: 0,
@@ -37,69 +32,24 @@ export default function ClientPage({ initialOptions }: ClientPageProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const handleSearch = useCallback(async () => {
-    setIsLoading(true);
-    
-    try {
-      const params = new URLSearchParams(searchParams.toString());
-      const cacheKey = params.toString();
-      
-      // キャッシュをチェック
-      if (searchCache.has(cacheKey)) {
-        const cached = searchCache.get(cacheKey)!;
-        setSearchResults(cached);
-        setCurrentPage(cached.page);
-        setIsLoading(false);
-        return;
-      }
-
-      const response = await fetch(`/api/search?${params.toString()}`);
-      const data = await response.json();
-      
-      if (response.ok) {
-        const results = {
-          lectures: data.lectures,
-          totalCount: data.totalCount,
-          page: data.page,
-          limit: data.limit,
-          hasMore: data.hasMore,
-        };
-        
-        // キャッシュに保存（最大100件）
-        if (searchCache.size >= 100) {
-          const firstKey = searchCache.keys().next().value;
-          if (firstKey) {
-            searchCache.delete(firstKey);
-          }
-        }
-        searchCache.set(cacheKey, results);
-        
-        setSearchResults(results);
-        setCurrentPage(data.page);
-      } else {
-        console.error('Search failed:', data.error);
-      }
-    } catch (error) {
-      console.error('Search error:', error);
-    } finally {
-      setIsLoading(false);
-    }
-  }, [searchParams]);
-
-  // 初期検索実行（URLパラメータがある場合）
-  useEffect(() => {
-    const params = new URLSearchParams(searchParams.toString());
-    if (params.toString()) {
-      handleSearch();
-    }
-  }, [searchParams, handleSearch]);
+  const handleSearch = useCallback((searchData: {
+    lectures: unknown[];
+    totalCount: number;
+    page: number;
+    limit: number;
+    hasMore: boolean;
+  }) => {
+    // SearchFormから渡されたデータを直接使用
+    setSearchResults(searchData);
+    setCurrentPage(searchData.page);
+  }, []);
 
   const handleLoadMore = useCallback(async () => {
     if (!searchResults.hasMore || isLoading) return;
 
     setIsLoading(true);
     try {
-      const params = new URLSearchParams(searchParams.toString());
+      const params = new URLSearchParams();
       params.set('page', String(currentPage + 1));
       
       const response = await fetch(`/api/search?${params.toString()}`);
@@ -120,7 +70,7 @@ export default function ClientPage({ initialOptions }: ClientPageProps) {
     } finally {
       setIsLoading(false);
     }
-  }, [searchResults, currentPage, searchParams, isLoading]);
+  }, [searchResults, currentPage, isLoading]);
 
   const handleLoading = useCallback((loading: boolean) => {
     setIsLoading(loading);
@@ -141,7 +91,7 @@ export default function ClientPage({ initialOptions }: ClientPageProps) {
       </h2>
 
       <LectureList
-        lectures={searchResults.lectures}
+        lectures={searchResults.lectures as LectureWithRelations[]}
         totalCount={searchResults.totalCount}
         isLoading={isLoading}
         onLoadMore={handleLoadMore}

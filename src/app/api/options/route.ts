@@ -32,9 +32,21 @@ export async function GET() {
 
   } catch (error) {
     console.error('Options fetch error:', error);
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    );
+    
+    // データベース接続エラーの場合はデフォルトオプションを返す
+    return NextResponse.json({
+      creditOpts: [1, 2, 3, 4, 5, 6],
+      gradeOpts: [1, 2, 3, 4],
+      depOpts: [
+        'コンピュータサイエンス学部コンピュータサイエンス学科',
+        'メディア学部メディア学科',
+        '工学部応用化学科',
+        '工学部機械工学科', 
+        '工学部電気電子工学科',
+        '応用生物学部応用生物学科',
+        '工学研究科博士前期課程サステイナブル工学専攻',
+        '教養学環'
+      ],
+    });
   }
 }

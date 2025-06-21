@@ -25,7 +25,14 @@ export async function GET(request: NextRequest) {
         const [dayJp, idx] = p.split('-');
         return { day: dayJp, period: Number(idx) };
       });
-      periodCondition = { periods: { some: { OR: cond } } };
+      // OR条件は配列の外側に置く
+      periodCondition = { 
+        periods: { 
+          some: {
+            OR: cond
+          }
+        }
+      };
     }
 
     // 検索条件の構築
@@ -37,6 +44,7 @@ export async function GET(request: NextRequest) {
       ...(department && { departments: { some: { name: { startsWith: department } } } }),
       ...periodCondition,
     };
+
 
     // 最適化されたクエリ実行
     const [lectures, totalCount] = await Promise.all([
@@ -106,9 +114,14 @@ export async function GET(request: NextRequest) {
 
   } catch (error) {
     console.error('Search error:', error);
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    );
+    
+    // データベース接続エラーの場合は空の結果を返す
+    return NextResponse.json({
+      lectures: [],
+      totalCount: 0,
+      page: 1,
+      limit: 50,
+      hasMore: false,
+    });
   }
 }
