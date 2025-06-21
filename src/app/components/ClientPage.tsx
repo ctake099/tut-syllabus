@@ -53,7 +53,7 @@ export default function ClientPage({ initialOptions }: ClientPageProps) {
       const params = new URLSearchParams();
       params.set('page', String(currentPage + 1));
       
-      const response = await fetch(`/api/search-optimized?${params.toString()}`);
+      const response = await fetch(`/api/search?${params.toString()}`);
       const data = await response.json();
       
       if (response.ok) {

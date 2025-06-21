@@ -94,7 +94,7 @@ export default function SearchForm({
       params.set('limit', '20');
       params.set('page', '1');
 
-      const response = await fetch(`/api/search-optimized?${params.toString()}`);
+      const response = await fetch(`/api/search?${params.toString()}`);
       const data = await response.json();
       
       if (response.ok) {
