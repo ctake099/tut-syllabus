@@ -29,7 +29,7 @@ export async function GET(request: NextRequest) {
     }
 
     // 1. まず基本的な講義データのみで高速検索
-    let baseWhere: any = {};
+    const baseWhere: Record<string, unknown> = {};
     
     // シンプルな条件のみ先に適用
     if (subject) baseWhere.subjectName = { contains: subject };
